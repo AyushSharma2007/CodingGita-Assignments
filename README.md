@@ -1,2 +1,2 @@
 # -Assignments-
-Assignments of all subjects
+Assignments of HTML, CSS, GIT, PYTHON & JS
