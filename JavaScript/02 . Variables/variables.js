@@ -79,9 +79,7 @@ letTest = 25; // Allowed
 // constTest = 35; // TypeError: Assignment to constant variable. 'const' cannot be re-assigned.
 
 
-// ----------------------------------------------------------------------------
 // Part c
-// ----------------------------------------------------------------------------
 
 // 9. Predict and Explain
 /*
