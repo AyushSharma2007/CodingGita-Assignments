@@ -117,6 +117,31 @@ console.log("Q10:", country);
 let finalScore = 50;
 finalScore = 80;
 
+// Part d — 2 Question
+
+// 11. Predict the Hoisting Behavior
+
+// `console.log(a);` will output `undefined`.
+// `console.log(b);` will throw a `ReferenceError: Cannot access 'b' before initialization`.
+// `console.log(c);` will not execute because the error on the previous line halts the program. 
+                    // If the `let b` error did not exist, this line would also throw a `ReferenceError`.
+
+// **Explanation:
+
+// `var`: Variables declared with `var` are hoisted to the top of their scope and automatically initialized with `undefined`. This is why `console.log(a)` successfully runs but prints `undefined` instead of `10`.
+// `let` and `const`: These are also hoisted to the top of their block scope, but they are *not* initialized. Instead, they are placed in a Temporal Dead Zone (TDZ) from the start of the block until the code execution reaches the line where they are declared. Attempting to access them while in the TDZ results in a `ReferenceError`.
+
+// 12. Fix the Hoisting Errors
+// To resolve the errors, the variables must be declared and initialized before they are accessed.
+
+var x = "Hello";
+let y = "World";
+const z = "!";
+
+console.log(x);
+console.log(y);
+console.log(z);
+console.log(x + " " + y + z);
 
 // Part e — Basic Identification
 
