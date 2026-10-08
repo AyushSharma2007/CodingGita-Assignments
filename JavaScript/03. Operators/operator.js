@@ -173,6 +173,8 @@ let applesLeft=totalApples-(applesSoldInMorning+applesSoldInEvening)
 // 10 - "5" - "2" → strings convert to numbers → 10 - 5 - 2 = 3
 // "10" - "5" - "2" → all strings convert to numbers → 10 - 5 - 2 = 3
 
+
+
 // ### 3. Multiplication `*`
 
 // 1. One notebook costs ₹45. Calculate the cost of buying 8 notebooks.  
@@ -205,8 +207,6 @@ let applesLeft=totalApples-(applesSoldInMorning+applesSoldInEvening)
 //     ```
 
 // ---
-
-
 
 // 1
 console.log(45 * 8); // 360
@@ -247,6 +247,8 @@ console.log("5" * 3 * "2");       // 30
 console.log("abc" * 4);           // NaN
 console.log(10 * "2.5");           // 25
 console.log("10" * "2.5" * "0");  // 0
+
+
 
 // ### 4. Division `/`
 
@@ -324,6 +326,8 @@ console.log(0 / 0);           // NaN
 console.log("20" / "4" / 2);  // 2.5
 console.log("abc" / 5);       // NaN
 
+
+
 // ### 5. Modulus `%`
 
 // 1. A teacher has 53 students and forms groups of 5. Find the number of students left over.  
@@ -351,8 +355,6 @@ console.log("abc" / 5);       // NaN
 //     ```
 
 // ---
-
-
 
 // Question 1
 console.log(53 % 5); // 3 students left
@@ -426,12 +428,49 @@ console.log(10 % 0);    // NaN
 //     console.log(result);
 //     ```
 
+----
 
 
-   Question -1
+// Question 1
+let sideCube = 6;
+console.log("1. Volume of cube:", sideCube ** 3); // Output: 216
 
-console.log("vvolume of cube=",3**3)
+// Question 2
+let sideCells = 9;
+console.log("2. Total cells:", sideCells ** 2); // Output: 81
 
-question -2
+// Question 3
+console.log("3. 5 to the power 4:", 5 ** 4); // Output: 625
 
-console.log("
+// Question 4
+let pixels = 1024;
+console.log("4. Total pixels:", pixels ** 2); // Output: 1048576
+
+// Question 5
+let base = 2;
+let power = -1;
+let result5 = base ** power;
+console.log("5. Predicted output:", result5); // Output: 0.5 (Explanation: 2^-1 = 1/2 = 0.5)
+
+// Question 6
+console.log("6. 3 ** 4:", 3 ** 4); // Output: 81
+
+// Question 7
+let sideSquare = 9;
+console.log("7. Area of square:", sideSquare ** 2); // Output: 81
+
+// Question 8
+console.log("8. 2 ** 5:", 2 ** 5); // Output: 32
+console.log("8. 5 ** 2:", 5 ** 2); // Output: 25
+// Explanation: No, they are not the same. Exponentiation is not commutative.
+
+// Question 9
+console.log("9a.", 2 ** 3 ** 2);      // Output: 512. Right-associative: Evaluates as 2 ** (3 ** 2) = 2 ** 9.
+console.log("9b.", (2 ** 3) ** 2);    // Output: 64. Parentheses force left-to-right: Evaluates as 8 ** 2.
+console.log("9c.", 2 ** -3);          // Output: 0.125. Evaluates as 1 / (2 ** 3) = 1/8.
+// console.log(-2 ** 2);              // SyntaxError: Unary operator (-) not allowed immediately before exponentiation base.
+console.log("9d.", (-2)
+
+// Question 10
+// 1 as any non-zero number raised to the power of 0 is always 1.
+
