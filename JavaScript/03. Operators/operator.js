@@ -471,3 +471,198 @@ console.log("9d.", (-2)
 // Question 10
 // 1 as any non-zero number raised to the power of 0 is always 1.
 
+
+            
+// B] Assignment Operators
+
+// 1. Simple Assignment =
+// 1. Store a student’s name as "Priya" and marks as 92 using the assignment operator.
+let studentName = "Priya";
+let marks = 92;
+
+// 2. Create a variable score and assign it the value 0.
+let score = 0;
+
+// 3. Assign the value 50 to three variables a, b and c using a single chained assignment.
+let a, b, c;
+a = b = c = 50;
+
+// 4. Predict the output: let x; x = 100; console.log(x);
+// Output: 100
+
+// 5. Predict the output: let p = 15; let q = p; q = 30; console.log(p, q);
+// Output: 15 30
+
+// 2. Add and Assign +=
+// 1. A player’s score is 80. He scores 25 more points. Update the score using +=.
+let playerScore = 80;
+playerScore += 25;
+
+// 2. A wallet has ₹1500. Cashback of ₹120 is added. Update the balance using +=.
+let wallet = 1500;
+wallet += 120;
+
+// 3. Predict the output: let count = 10; count += 5; console.log(count);
+// Output: 15
+
+// 4. Predict the output: let msg = "Good"; msg += " Morning"; console.log(msg);
+// Output: Good Morning
+
+// 5. What is the final value after let n = 20; n += "5";? Explain.
+// Output: "205" (String concatenation happens because "5" is a string type)
+
+// 3. Subtract and Assign -=
+// 1. Health is 100. Player takes 35 damage. Update health using -=.
+let health = 100;
+health -= 35;
+
+// 2. Stock of 300 items is reduced by 45 after a sale. Update using -=.
+let stock = 300;
+stock -= 45;
+
+// 3. Predict the output: let lives = 5; lives -= 2; console.log(lives);
+// Output: 3
+
+// 4. Predict the output: let num = "40"; num -= 15; console.log(num);
+// Output: 25
+
+// 5. What is the result of let x = "abc"; x -= 5;? Explain.
+// Output: NaN (Cannot subtract a number from a non-numeric string)
+
+// 4. Multiply and Assign *=
+// 1. Price of an item is ₹500. Apply 18% GST using *= 1.18.
+let price = 500;
+price *= 1.18;
+
+// 2. A quantity of 8 is tripled. Update using *=.
+let qty = 8;
+qty *= 3;
+
+// 3. Predict the output: let amount = 200; amount *= 1.1; console.log(amount);
+// Output: 220.00000000000003
+
+// 4. Predict the output: let val = "7"; val *= 3; console.log(val);
+// Output: 21
+
+// 5. What is the result of let y = "hello"; y *= 2;? Explain.
+// Output: NaN (Cannot multiply a non-numeric string)
+
+// 5. Divide and Assign /=
+// 1. Total of 180 chocolates is shared among 6 children. Update using /=.
+let chocolates = 180;
+chocolates /= 6;
+
+// 2. Distance of 300 km is covered in 5 hours. Find average speed using /=.
+let distance = 300;
+distance /= 5;
+
+// 3. Predict the output: let total = 400; total /= 8; console.log(total);
+// Output: 50
+
+// 4. Predict the output: let num = "100"; num /= 4; console.log(num);
+// Output: 25
+
+// 5. What is the result of let z = 50; z /= 0;? Explain.
+// Output: Infinity (Division by zero in JS yields Infinity)
+
+// 6. Modulus and Assign %=
+// 1. Number 47 is divided by 6. Store only the remainder using %=.
+let num1 = 47;
+num1 %= 6;
+
+// 2. Counter is at 23. Keep only the remainder when divided by 12 using %=.
+let counter = 23;
+counter %= 12;
+
+// 3. Predict the output: let num = 29; num %= 5; console.log(num);
+// Output: 4
+
+// 4. Predict the output: let x = "17"; x %= 3; console.log(x);
+// Output: 2
+
+// 5. What is the result of let m = 15; m %= 0;? Explain.
+// Output: NaN (Modulus by zero yields NaN)
+
+// 7. Exponentiation and Assign =
+// 1. Side of a cube is 5. Update it to get the volume using = 3.
+let side = 5;
+side = 3;
+
+// 2. Number 4 needs to be squared. Use = 2.
+let num2 = 4;
+num2 = 2;
+
+// 3. Predict the output: let base = 2; base = 5; console.log(base);
+// Output: 32
+
+// 4. Predict the output: let n = 4; n = 0.5; console.log(n);
+// Output: 2
+
+// 5. What is the result of let p = 2; p = -1;? Explain.
+// Output: 0.5 (2 to the power of -1 equals 1/2)
+
+// C] Comparison Operators
+
+// 1. Loose Equality ==
+// 1. Check whether the string "25" is loosely equal to the number 25.
+// "25" == 25 -> true
+
+// 2. Check if 0 == false returns true or false.
+// 0 == false -> true
+
+// 3. Predict the output: console.log(10 == "10"); console.log(null == undefined);
+// Output: true, true
+
+// 4. Predict the output: console.log("" == 0); console.log([] == false);
+// Output: true, true
+
+// 5. Why does NaN == NaN return false?
+// NaN is never equal to anything, not even itself, by IEEE 754 standards.
+
+// 2. Loose Inequality !=
+// 1. Check whether "18" != 18 returns true or false.
+// "18" != 18 -> false
+
+// 2. A password is stored as "1234". User enters 1234 (number). Will != return true?
+// false (they are loosely equal, so inequality is false)
+
+// 3. Predict the output: console.log(5 != "5"); console.log(0 != false);
+// Output: false, false
+
+// 4. Predict the output: console.log(null != undefined); console.log("" != 0);
+// Output: false, false
+
+// 5. What does NaN != NaN return? Explain.
+// true (NaN is not equal to NaN)
+
+// 3. Strict Equality ===
+// 1. Check whether "25" === 25 returns true or false. Explain why.
+// false (Strict equality checks data types. "25" is a string, 25 is a number).
+
+// 2. Check if 0 === false and null === undefined.
+// 0 === false -> false, null === undefined -> false
+
+// 3. Predict the output: console.log(10 === "10"); console.log(true === 1);
+// Output: false, false
+
+// 4. Predict the output: console.log("" === 0); console.log([] === false);
+// Output: false, false
+
+// 5. Why is === preferred over == in most real-world code?
+// It prevents unexpected, silent type coercion bugs.
+
+// 4. Strict Inequality !==
+// 1. Check whether "18" !== 18 returns true or false.
+// true (Since their types are different, they are strictly not equal).
+
+// 2. Check if 0 !== false and null !== undefined.
+// 0 !== false -> true, null !== undefined -> true
+
+// 3. Predict the output: console.log(5 !== "5"); console.log(true !== 1);
+// Output: true, true
+
+// 4. Predict the output: console.log("" !== 0); console.log(NaN !== NaN);
+// Output: true, true
+
+// 5. Write a condition that checks if a variable input is strictly not equal to the string "0".
+// input !== "0"
