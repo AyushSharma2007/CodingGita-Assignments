@@ -82,7 +82,8 @@ let remaingAmount=amountInWallet-(amountSpendOnFirstItem+amountSpendOnSItem)
 console.log("REmaining Amount=",remainingAmount)
 
 // Question -10
-console.log(5 + "5" + 5);===> output=555 , As js  perform concatenation instead of addition
+console.log(5 + "5" + 5);===> output=555 
+  // As js  perform concatenation instead of addition
 
 console.log(5 + 5 + "5");===>>output =105
 console.log("5" + 5 + 5); ===>>output = 555
@@ -137,7 +138,7 @@ console.log("final marks=",finalMarks)
 
 let totalBoxes=2500
 let boxesSend=875
-let remainingBoxes=totalBoxes-BoxesSend
+let remainingBoxes=totalBoxes-boxesSend
 console.log("Remaining Boxes=",remainingBoxes)
 
 // Question-4
