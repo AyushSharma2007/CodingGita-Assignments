@@ -148,7 +148,7 @@ console.log("Remaining Boxes=",remainingBoxes)
 // 15
 
 // Question-6
-// 67
+// 63
 
 // question-7
 let totalCapacity=500
@@ -157,7 +157,7 @@ let quantityLeft=totalCapacity-usedCapacity
 console.log("Quantity left =",quantityLeft)
 
 // Question-8
-// both will give 30mas output as - converts string into number
+// both will give 30 as output as - converts string into number
 
 // Question-9
 let totalApples=240
@@ -383,8 +383,10 @@ console.log(0 % 7);  // 0
 console.log(15 % 0); // NaN
 
 // Question 9
-console.log(Math.floor(47 / 6)); // 7 full sheets
-console.log(47 % 6);             // 5 pages left
+let totalPages = 47;
+let pagesPerSheet = 6;
+let fullSheets = (totalPages - (totalPages % pagesPerSheet)) / pagesPerSheet; // 7
+let leftoverPages = totalPages % pagesPerSheet;                               // 5
 
 // Question 10
 console.log(17 % 5);    // 2
@@ -464,7 +466,7 @@ console.log("8. 5 ** 2:", 5 ** 2); // Output: 25
 
 // Question 9
 console.log("9a.", 2 ** 3 ** 2);      // Output: 512. Right-associative: Evaluates as 2 ** (3 ** 2) = 2 ** 9.
-console.log("9b.", (2 ** 3) ** 2);    // Output: 64. Parentheses force left-to-right: Evaluates as 8 ** 2.
+console.log("9b.", (2 ** 3) ** 2);    // Output: 64. Parentheses forces left-to-right: Evaluates as 8 ** 2.
 console.log("9c.", 2 ** -3);          // Output: 0.125. Evaluates as 1 / (2 ** 3) = 1/8.
 // console.log(-2 ** 2);              // SyntaxError: Unary operator (-) not allowed immediately before exponentiation base.
 console.log("9d.", (-2)
@@ -476,6 +478,7 @@ console.log("9d.", (-2)
             
 // B] Assignment Operators
 
+            
 // 1. Simple Assignment =
 // 1. Store a student’s name as "Priya" and marks as 92 using the assignment operator.
 let studentName = "Priya";
@@ -494,6 +497,7 @@ a = b = c = 50;
 // 5. Predict the output: let p = 15; let q = p; q = 30; console.log(p, q);
 // Output: 15 30
 
+
 // 2. Add and Assign +=
 // 1. A player’s score is 80. He scores 25 more points. Update the score using +=.
 let playerScore = 80;
@@ -511,6 +515,7 @@ wallet += 120;
 
 // 5. What is the final value after let n = 20; n += "5";? Explain.
 // Output: "205" (String concatenation happens because "5" is a string type)
+
 
 // 3. Subtract and Assign -=
 // 1. Health is 100. Player takes 35 damage. Update health using -=.
