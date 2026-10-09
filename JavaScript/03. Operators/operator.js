@@ -535,6 +535,7 @@ stock -= 45;
 // 5. What is the result of let x = "abc"; x -= 5;? Explain.
 // Output: NaN (Cannot subtract a number from a non-numeric string)
 
+
 // 4. Multiply and Assign *=
 // 1. Price of an item is ₹500. Apply 18% GST using *= 1.18.
 let price = 500;
@@ -552,6 +553,7 @@ qty *= 3;
 
 // 5. What is the result of let y = "hello"; y *= 2;? Explain.
 // Output: NaN (Cannot multiply a non-numeric string)
+
 
 // 5. Divide and Assign /=
 // 1. Total of 180 chocolates is shared among 6 children. Update using /=.
@@ -571,6 +573,7 @@ distance /= 5;
 // 5. What is the result of let z = 50; z /= 0;? Explain.
 // Output: Infinity (Division by zero in JS yields Infinity)
 
+
 // 6. Modulus and Assign %=
 // 1. Number 47 is divided by 6. Store only the remainder using %=.
 let num1 = 47;
@@ -588,6 +591,7 @@ counter %= 12;
 
 // 5. What is the result of let m = 15; m %= 0;? Explain.
 // Output: NaN (Modulus by zero yields NaN)
+
 
 // 7. Exponentiation and Assign =
 // 1. Side of a cube is 5. Update it to get the volume using = 3.
@@ -607,7 +611,10 @@ num2 = 2;
 // 5. What is the result of let p = 2; p = -1;? Explain.
 // Output: 0.5 (2 to the power of -1 equals 1/2)
 
+
+
 // C] Comparison Operators
+
 
 // 1. Loose Equality ==
 // 1. Check whether the string "25" is loosely equal to the number 25.
@@ -625,6 +632,7 @@ num2 = 2;
 // 5. Why does NaN == NaN return false?
 // NaN is never equal to anything, not even itself, by IEEE 754 standards.
 
+
 // 2. Loose Inequality !=
 // 1. Check whether "18" != 18 returns true or false.
 // "18" != 18 -> false
@@ -641,6 +649,7 @@ num2 = 2;
 // 5. What does NaN != NaN return? Explain.
 // true (NaN is not equal to NaN)
 
+
 // 3. Strict Equality ===
 // 1. Check whether "25" === 25 returns true or false. Explain why.
 // false (Strict equality checks data types. "25" is a string, 25 is a number).
@@ -656,6 +665,7 @@ num2 = 2;
 
 // 5. Why is === preferred over == in most real-world code?
 // It prevents unexpected, silent type coercion bugs.
+
 
 // 4. Strict Inequality !==
 // 1. Check whether "18" !== 18 returns true or false.
