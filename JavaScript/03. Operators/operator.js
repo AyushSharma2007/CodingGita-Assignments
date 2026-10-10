@@ -682,3 +682,169 @@ num2 = 2;
 
 // 5. Write a condition that checks if a variable input is strictly not equal to the string "0".
 // input !== "0"
+
+
+// ### Part C] Relational Operator
+
+// 5. Greater Than >
+
+// 1. A student’s marks are 78. The passing marks are 40. Check whether the student has scored more than the passing marks.
+let studentMarks = 78;
+let passingMarks = 40;
+console.log("student passed? ",studentMarks > passingMarks)
+
+// 2. Temperature today is 35°C and yesterday it was 28°C. Check if today is hotter.
+let todayTemp = 35;
+let yesterTemp = 28;
+console.log("Hotter than yesterday?", todayTemp > yesterTemp)
+
+// 3. Predict the output.
+console.log(15 > 10);      // true
+console.log(10 > 15);      // false
+console.log(10 > 10);      // false
+
+// 4. Preedict the output.
+console.log("20" > 15);        // true
+console.log("5" > "10");       // true
+console.log("abc" > 10);       // false
+
+// 5. What is the result of null > 0 and undefined > 0? Explain.
+console.log(null > 0)        // false
+console.log(undefined > 0)   // false
+
+// 6. A shop has 120 items in stock. A customer wants to buy 85 items. Write a condition using > to check if stock is sufficient.
+let stock = 120 ;
+let need = 85 ;
+console.log("Stock sufficient?", stock > need)
+
+// 07. Predict the output.
+console.log(true > false);      // true
+console.log("10" > "2");        // false
+console.log(NaN > 5);           // false
+
+
+// 6. Less Than <
+
+// 1. A box can hold maximum 50 kg. Current weight is 42 kg. Check if more items can still be added.
+let max = 50;
+let weight = 42;
+console.log("can more items be added? ", max < weight)
+
+// 2. Age of a person is 16. Minimum age required is 18. Check if the person is underage.
+let age = 16;
+let minAge = 18;
+console.log("is Underage? ",age < minAge)
+
+// 3. Predict the output: 8 < 12, 20 < 10, 7 < 7
+// true, false, false
+
+// 4. Predict the output: "8" < 10, "20" < "3", "hello" < 5
+// true, true, false
+
+// 5. What is the result of null < 0 and undefined < 0? Explain.
+// false, false. null converts to 0, undefined converts to NaN.
+
+// 6. A tank capacity is 500 litres. Current water level is 375 litres. Write a condition using < to check if it is not full.
+// 375 < 500
+
+// 7. Predict and explain: false < true, "5" < "15", NaN < 10
+// true (0 < 1)
+// false (string 5 comes after 1)
+// false (NaN comparisons are always false)
+
+
+// 7. Greater Than or Equal To >=
+
+// 1. Minimum marks required for distinction is 75. A student scored 75. Check if the student gets distinction.
+let studentMarks = 75;
+let minMarks = 75;
+console.log("student gets distinction? ",studentMarks >= passingMarks)
+
+// 2. Ticket price is ₹300. A person has ₹300. Check if they can buy the ticket.
+let price = 300;
+let balance = 300;
+console.log("Ticket affordable? ",price >= balance).
+
+// 3. Predict the output: 25 >= 25, 30 >= 25, 20 >= 25
+// true, true, false
+
+// 4. Predict the output: "25" >= 25, "10" >= "2", null >= 0
+// true, false, true
+
+// 5. What is the result of undefined >= 0? Explain.
+// false. undefined converts to NaN.
+
+// 6. A lift can carry maximum 8 people. Currently 8 people are inside. Write a condition using >= to check if the lift is full or overloaded.
+// 8 >= 8
+
+// 7. Predict and explain: true >= 1, "" >= 0, NaN >= NaN
+// true (1 >= 1)
+// true (empty string becomes 0, so 0 >= 0)
+// false (NaN cannot be compared to NaN)
+
+  
+// 8. Less Than or Equal To <=
+
+// 1. Maximum speed limit is 60 km/h. A vehicle is travelling at 60 km/h. Check if it is within the limit.
+let Max = 60;
+let current = 60;
+console.log("Within limit? ",max <= current)
+
+// 2. A student needs at least 40 marks to pass. He scored 39. Check if he has failed.
+let studentMarks = 39;
+let passingMarks = 40;
+console.log("student failed? ",studentMarks <= passingMarks)
+
+// 3. Predict the output: 15 <= 20, 20 <= 15, 15 <= 15
+// true, false, true
+
+// 4. Predict the output: "15" <= 20, "30" <= "5", null <= 0
+// true, true, true
+
+// 5. What is the result of undefined <= 0? Explain.
+// false. undefined converts to NaN.
+
+// 6. A bag can hold maximum 10 books. Currently it has 10 books. Write a condition using <= to check if more books can be added.
+let Max = 60;
+let current = 60;
+console.log("More books can be added? ",max <= current)
+
+// 7. Predict and explain: false <= 0, "" <= 0, NaN <= 5
+// true (false converts to 0)
+// true (empty string converts to 0)
+// false (NaN comparisons are always false)
+
+
+// Mixed Practice (>, <, >=, <=)
+
+// 1. Write expressions to check: Whether age 18 is greater than or equal to voting age 18. Whether temperature 32 is less than 35. Whether score 90 is greater than 85.
+// Check if age is greater than or equal to voting age
+let age = 18;
+let votingAge = 18;
+console.log(age >= votingAge); 
+
+// Check if temperature is less than 35
+let temperature = 32;
+console.log(temperature < 35); 
+
+// Check if score is greater than 85
+let score = 90;
+console.log(score > 85);
+
+// 2. Predict the outputs: 10 > 5 && 5 < 10, "10" >= 10, null <= undefined, "5" < "10" && 5 > 2
+// true, true, false, false
+
+// 3. A product costs ₹499. A customer has ₹500. Write conditions using >= and < to decide if the customer can buy it and if any change will be left.
+let productCost = 499;
+let customerMoney = 500;
+
+// Condition to decide if the customer can buy it (>=)
+let canBuy = customerMoney >= productCost;
+console.log("Can buy the product:", canBuy);
+
+// Condition to check if any change will be left over (<)
+let changeLeft = productCost < customerMoney;
+console.log("Will have change left:", changeLeft);
+
+// 4. Explain why "10" > "2" is false but 10 > 2 is true.
+// "10" > "2" compares strings character by character. Since the first character "1" is smaller than "2", the result is false. 10 > 2 compares numeric values, and 10 is mathematically greater than 2, making it true.
