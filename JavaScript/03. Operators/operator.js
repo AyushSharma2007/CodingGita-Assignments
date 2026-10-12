@@ -848,3 +848,116 @@ console.log("Will have change left:", changeLeft);
 
 // 4. Explain why "10" > "2" is false but 10 > 2 is true.
 // "10" > "2" compares strings character by character. Since the first character "1" is smaller than "2", the result is false. 10 > 2 compares numeric values, and 10 is mathematically greater than 2, making it true.
+
+
+
+// Part E]: Increment / Decrement Operators (++ / --)
+
+
+// Part - A
+
+// 1. A counter starts at 5. Use the increment operator to increase it by 1 and print the new value.
+let counter = 1;
+counter++
+console.log(counter)
+
+// 2. A player has 3 lives. Use the decrement operator to reduce one life and print the remaining lives.
+let livess = 3;
+lives--
+console.log(lives)
+
+// 3. Start with score = 10. Increase the score using ++ and print it.
+let score = 10;
+score++
+console.log(score)
+
+// 4. Start with items = 8. Decrease the items using -- and print it.
+let items = 8;
+items--
+console.log(items)
+
+// 5. Declare count = 0. Increment it twice and print the final value.
+let count = 0;
+count ++
+count ++ 
+console.log(count)
+
+
+// Part - B
+
+// 6. Start with x = 5.
+// Create y = x++
+// Print both x and y.
+// Explain why the values are different.
+
+let x = 5;
+y = x++
+console.log(x,y)        // y = x++ uses the post-increment operator. This assigns the current value of x (5) to y first, and then increases x by 1 (making it 6).
+
+// 7.
+// Start with a = 5.
+// Create b = ++a
+// Print both a and b.
+// Explain the difference from the previous question.
+
+let a = 5;
+b = ++a;
+console.log(a,b)        // b = ++a uses the pre-increment operator. This increases a by 1 (making it 6) first, and then assigns that new value to b.
+
+// 8. 
+// Start with lives = 3.
+// Use post-decrement (lives--) and store the result in previousLives.
+// Print both variables.
+
+let lives = 3;
+previousLives = lives--
+console.log(lives , previousLives)
+
+// 9.
+// Start with attempts = 0.
+// Use pre-increment (++attempts) and store the result in currentAttempts.
+// Print both variables.
+
+let attempts = 0;
+currentAttempts = ++attempts
+console.log(attempts , currentAttempts)
+
+// 10.
+
+// Start with points = 100.
+// Increase it using ++
+// Then decrease it using --
+// Print the final value.
+
+let points = 100
+points--
+console.log(points)
+
+
+// Part - C  (predict output)
+
+// 11.
+// let x = 10;
+// let y = x++;
+// let z = ++x;
+// console.log(x, y, z);                    // 12 10 12
+
+// 12. 
+// let a = 5;                               
+// let b = a-- + ++a;
+// console.log(a, b);                       // 5 10
+
+// 13. 
+// let m = 7;
+// let n = --m + m++;
+// console.log(m, n);                       // 7 12
+
+// 14.
+// let p = 3;
+// let q = p++ + ++p + p;
+// console.log(p, q);                       // 3 13
+
+// 15.
+// let val = 0;
+// val = val++ + ++val;
+// console.log(val);                        // 2
