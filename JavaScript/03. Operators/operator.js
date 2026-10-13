@@ -961,3 +961,158 @@ console.log(points)
 // let val = 0;
 // val = val++ + ++val;
 // console.log(val);                        // 2
+
+
+// Part F]: Logical Operators
+
+
+// 1. Logical AND &&
+
+//1. Stored username is "admin" and password is 1234. Check if both are valid using && and print the result.
+
+let username="Admin"
+let password=1234
+let enterinsite= username==true && password==true
+console.log(enterinsite)
+
+//2.A user is logged in (isLoggedIn = true) and has permission (hasPermission = true). Check if they can access a page using &&.
+
+let isloggedIn = true
+let hasperms = false
+let access = isloggedIn==true && hasperms==true
+console.log(access)
+
+//3. A product is in stock (inStock = true) and its price is less than ₹1000 (price = 800). Check if it can be bought using &&.
+
+let instock = true
+let price = 1000
+let product = instock==true && price>=800
+console.log(product)
+
+//4.A student has marks 75 and attendance 80. Passing requires marks greater than 65 and attendance greater than 70. Check using &&.
+
+let studentmarks = 75
+let attendeance = 80
+let isPassed = studentmarks>=75 && attendeance>=85
+console.log(isPassed)
+
+//5.Two conditions: isWeekend = true and isHoliday = false. A party happens only if both are true. Check using &&
+
+let isWeekend = true
+let isHoilday = false
+if(isWeekend==true&&isHoilday==true){
+    console.log("its holiday")
+}
+else{
+    console.log("is not holiday")
+}
+
+//6 .Predict the output:
+// let a = 0;
+// let b = 10;
+// let result = a && b;
+// console.log(result);             //false
+
+//7.Predict the output:
+
+// let x = 5;
+// let y = 10;
+// let result = (x > 3 && y) || 0;
+// console.log(result);             // 10
+
+//8.Predict the output:
+
+// let p = "Hello";
+// let q = "";
+// let r = "World";
+// let result = p && q && r;
+// console.log(result);             // false
+
+//9. Predict the output:
+
+// let val = 5;
+// let condition = val && (val = 0);
+// console.log(condition);
+// console.log(val);                // 0 and 0
+
+//10. Predict the output:
+
+// let x = 10;
+// let y = 20;
+// let result = (x && y) && (x > y);
+// console.log(result);             // false
+
+
+// 2. Logical OR ||
+ 
+//1. A user can login with either a correct password (passwordCorrect = true) or a valid OTP (otpValid = false). Check if login is allowed using ||.
+ 
+let passwordCorrect = true
+let otpValid = false
+let loginAllowed = passwordCorrect==true || otpValid==true
+console.log(loginAllowed)   // true
+ 
+//2. A discount applies if the user is a member (isMember = false) or has a coupon (hasCoupon = true). Check using ||.
+ 
+let isMember = false
+let hasCoupon = true
+let discount = isMember==true || hasCoupon==true
+console.log(discount)   // true
+ 
+//3. Entry is allowed if age is above 18 (age = 16) or height is above 150 cm (height = 155). Check using ||.
+ 
+let age = 16
+let height = 155
+let entry = age>18 || height>150
+console.log(entry)   // true
+ 
+//4. A form is valid if either email is given (emailGiven = true) or phone is given (phoneGiven = false). Check using ||.
+ 
+let emailGiven = true
+let phoneGiven = false
+if(emailGiven==true || phoneGiven==true){
+    console.log("form is valid")
+}
+else{
+    console.log("form is not valid")
+}
+ 
+//5. A game level opens if score is above 1000 (score = 900) or time bonus is collected (timeBonus = true). Check using ||.
+ 
+let isscore = 900
+let timeBonus = true
+let levelOpen = isscore>1000 || timeBonus==true
+console.log(levelOpen)   // true
+ 
+//6. Predict the output:
+// let a = 0;
+// let b = false;
+// let c = "";
+// let d = null;
+// let e = 42;
+// let result = a || b || c || d || e;
+// console.log(result);                 // 42
+// (|| returns the first truthy value, 0, false, "", null are all falsy so it reaches 42)
+ 
+//7. Predict the output:
+// let x = "Hello" || 0;
+// let y = 0 || "Hi";
+// console.log(x, y);                  // Hello Hi
+ 
+//8. Predict the output:
+// let a = 10;
+// let b = 20;
+// let result = (a < 5) || (b > 15);
+// console.log(result);                // true
+// (false || true)
+ 
+//9. Predict the output:
+// let val = 5;
+// let condition = val || (val = 0);
+// console.log(condition);
+// console.log(val);                  // 5 and 5
+// (val is truthy so || stops there, (val = 0) never runs)
+ 
+//10. Predict the output:
+// let x = "" || 0 || false || null || undefined || "OK";
+// console.log(x);                    // OK
