@@ -1116,3 +1116,320 @@ console.log(levelOpen)   // true
 //10. Predict the output:
 // let x = "" || 0 || false || null || undefined || "OK";
 // console.log(x);                    // OK
+
+
+// 3. Logical NOT !
+
+// 1. A user is not banned (isBanned = false). Check if they can login by negating isBanned using !.
+
+let isBanned = false;
+let canLogin = !isBanned;
+console.log(canLogin);
+
+// 2. A task is not completed (isCompleted = false). Check if it is still pending using !.
+
+let isCompleted = false;
+let isPending = !isCompleted;
+console.log(isPending);
+
+// 3. A light is on (isOn = true). Check if it is off using !.
+
+let isOn = true;
+let isOff = !isOn;
+console.log(isOff);
+
+// 4. A subscription is not active (isActive = false). Check if the user cannot access premium content using !.
+
+let isActive = false;
+let cannotAccess = !isActive;
+console.log(cannotAccess);
+
+// 5. A file is not read-only (isReadOnly = false). Check if it can be edited using !.
+
+let isReadOnly = false;
+let canEdit = !isReadOnly;
+console.log(canEdit);
+
+
+// Additional Questions (Logical NOT !)
+
+// 6. Predict the output:
+let a_6 = 0;
+let b_6 = 1;
+console.log(!a_6, !b_6); // true false
+
+// 7. Predict the output:
+let x_7 = "Hello";
+let y_7 = "";
+console.log(!x_7, !y_7); // false true
+
+// 8. Predict the output:
+let val_8 = 5;
+let result_8 = !val_8;
+console.log(result_8); // false
+
+// 9. Predict the output:
+let a_9 = 10;
+let b_9 = 20;
+let result_9 = !(a_9 && b_9);
+console.log(result_9); // false
+
+// 10. Predict the output:
+let x_10 = 0;
+let y_10 = 1;
+let result_10 = !(x_10 || y_10);
+console.log(result_10); // false
+
+
+
+// Part G]: typeof Operator
+
+// Part a:
+
+// 1. Declare a variable name = "Rahul" and print its type using typeof.
+
+let myName = "Rahul";
+console.log(typeof myName);
+
+// 2. Declare a variable age = 25 and print its type.
+
+let age = 25;
+console.log(typeof age);
+
+// 3. Declare a variable isStudent = true and print its type.
+
+let isStudent = true;
+console.log(typeof isStudent);
+
+// 4. Declare a variable city (without assigning a value) and print its type.
+
+let city;
+console.log(typeof city);
+
+// 5. Print the type of the value null.
+
+console.log(typeof null);
+
+// Part b:
+
+// 6. Predict the output:
+console.log(typeof 42);                 // "number"
+console.log(typeof "Hello");            // "string"
+console.log(typeof true);               // "boolean"
+console.log(typeof undefined);          // "undefined"
+
+// 7. Predict the output:
+console.log(typeof null);               // "object"
+console.log(typeof {});                 // "object"
+console.log(typeof []);                 // "object"
+
+// 8. Predict the output:
+console.log(typeof NaN);                // "number"
+console.log(typeof Infinity);           // "number"
+console.log(typeof function(){});       // "function"
+
+// 9. Create three variables and print their type.
+
+let price = 99.99;
+let message = "Welcome";
+let isActiveUser = false;
+console.log("price is:", typeof price);
+console.log("message is:", typeof message);
+console.log("isActiveUser is:", typeof isActiveUser);
+
+// 10. Predict the output:
+let value_10 = null;
+console.log(typeof value_10);                  // "object"
+console.log(typeof value_10 === "object");     // true
+
+// Part c:
+
+// 11. Predict the output:
+console.log(typeof typeof 100);            // "string"
+console.log(typeof typeof "Hi");           // "string"
+console.log(typeof typeof true);           // "string"
+
+// 12. Predict the output:
+let a_12 = 10;
+let b_12 = "10";
+console.log(typeof a_12 === typeof b_12);  // false
+console.log(typeof a_12 == typeof b_12);   // false
+
+// 13. Predict the output:
+console.log(typeof null === "object");       // true
+console.log(typeof [] === "object");         // true
+console.log(typeof {} === "object");         // true
+
+// 14. Predict the output:
+let x_14;
+console.log(typeof x_14);         // "undefined"
+x_14 = null;
+console.log(typeof x_14);         // "object"
+x_14 = 0;
+console.log(typeof x_14);         // "number"
+
+// 15. Predict the output:
+console.log(typeof NaN === "number");          // true
+console.log(typeof Infinity === "number");     // true
+console.log(typeof (1 / 0));                   // "number"
+
+
+
+// Part H]: Type Coercion
+
+// Part a:
+
+// 1. Convert the string "25" into a number using Number() and add 10 to it.
+
+let strNum = "25";
+console.log(Number(strNum) + 10);
+
+// 2. Convert the number 100 into a string using String() and join it with " rupees".
+
+let numVal = 100;
+console.log(String(numVal) + " rupees");
+
+// 3. Convert the value 0 into a boolean using Boolean() and print it.
+
+console.log(Boolean(0));
+
+// 4. Convert the value "Hello" into a boolean and print it.
+
+console.log(Boolean("Hello"));
+
+// 5. Use the unary + operator to convert "50" into a number and multiply it by 2.
+
+console.log(+"50" * 2);
+
+
+// Part b:
+
+// 6. Predict the output:
+console.log("10" - 5);       // 5
+console.log("10" + 5);       // "105"
+console.log("10" * 2);       // 20
+console.log("10" / 2);       // 5
+
+// 7. Predict the output:
+console.log("5" - "2");       // 3
+console.log("5" + "2");       // "52"
+console.log("5" * "2");       // 10
+console.log("5" / "2");       // 2.5
+
+// 8. Predict the output:
+console.log(Number("123"));       // 123
+console.log(Number("123abc"));    // NaN
+console.log(Number(true));        // 1
+console.log(Number(false));       // 0
+console.log(Number(null));        // 0
+console.log(Number(undefined));   // NaN
+
+// 9. Predict the output:
+console.log(Boolean(0));           // false
+console.log(Boolean(""));          // false
+console.log(Boolean("0"));         // true
+console.log(Boolean([]));          // true
+console.log(Boolean({}));          // true
+console.log(Boolean(null));        // false
+
+// 10. Predict the output:
+console.log(String(100));           // "100"
+console.log(String(true));          // "true"
+console.log(String(null));          // "null"
+console.log(String(undefined));     // "undefined"
+console.log(100 + "");              // "100"
+
+// Part c:
+
+// 11. Predict the output:
+console.log("5" + 3 + 2);           // "532"
+console.log(5 + 3 + "2");           // "82"
+console.log("5" - 3 + 2);           // 4
+console.log(5 - "3" + "2");         // "22"
+
+// 12. Predict the output:
+console.log(true + true);           // 2
+console.log(true + false);          // 1
+console.log(true + "false");        // "truefalse"
+console.log(false + "true");        // "falsetrue"
+
+// 13. Predict the output:
+console.log(null + 5);              // 5
+console.log(undefined + 5);         // NaN
+console.log(null + "5");            // "null5"
+console.log(undefined + "5");       // "undefined5"
+
+// 14. Predict the output:
+console.log([] + []);               // ""
+console.log([] + {});               // "[object Object]"
+console.log({} + []);               // "[object Object]"
+console.log({} + {});               // "[object Object][object Object]"
+
+// 15. Predict the output:
+let a_15 = "10";
+let b_15 = 5;
+let c_15 = a_15 + b_15;
+let d_15 = a_15 - b_15;
+let e_15 = +a_15 + b_15;
+console.log(c_15, typeof c_15);       // "105" 'string'
+console.log(d_15, typeof d_15);       // 5 'number'
+console.log(e_15, typeof e_15);       // 15 'number'
+
+// 16. Predict the output:
+console.log(!!"Hello");               // true
+console.log(!!"");                    // false
+console.log(!!0);                     // false
+console.log(!!1);                     // true
+console.log(!!null);                  // false
+console.log(!!undefined);             // false
+
+// 17. Predict the output:
+console.log(Number(""));               // 0
+console.log(Number(" "));              // 0
+console.log(Number("0"));              // 0
+console.log(Number("  25  "));         // 25
+console.log(Number("25px"));           // NaN
+
+// 18. Predict the output:
+let val1 = "5";
+let val2 = 2;
+console.log(val1 + val2);              // "52"
+console.log(+val1 + val2);             // 7
+console.log(val1 - val2);              // 3
+console.log(val1 * val2);              // 10
+console.log(val1 / val2);              // 2.5
+
+
+
+// Bonus Mixed Practice Questions:
+
+// 19. Predict the output:
+let count = 5;
+console.log(typeof count++);   // "number"
+console.log(count);            // 6
+console.log(typeof ++count);   // "number"
+console.log(count);            // 7
+
+// 20. Predict the output:
+let x_20 = "10";
+let y_20 = ++x_20;
+console.log(x_20, y_20, typeof x_20, typeof y_20); // 11 11 'number' 'number'
+
+// 21. Predict the output:
+let a_21 = "5";
+let b_21 = a_21++;
+console.log(a_21, b_21, typeof a_21, typeof b_21); // 6 5 'number' 'number'
+
+// 22. Predict the output:
+console.log(typeof (1 + "2")); // "string"
+console.log(typeof (1 - "2")); // "number"
+console.log(typeof (1 * "2")); // "number"
+console.log(typeof (1 / "2")); // "number"
+
+// 23. Predict the output:
+let val_23 = null;
+console.log(typeof val_23);    // "object"
+console.log(val_23 + 1);       // 1
+console.log(val_23 - 1);       // -1
+console.log(val_23 * 1);       // 0
+console.log(Boolean(val_23));  // false
