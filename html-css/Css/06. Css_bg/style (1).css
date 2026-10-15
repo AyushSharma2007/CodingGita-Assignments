@@ -1,0 +1,105 @@
+#q1 {
+    background-color: lightblue;
+    padding: 20px;
+}
+#q2 {
+    background-color: #ff6347;
+    padding: 20px;
+}
+#q3 {
+    background-color: rgb(255, 192, 203);
+    padding: 20px;
+}
+#q4 {
+    background-color: rgba(0, 128, 0, 0.3);
+    padding: 20px;
+}
+#q5 {
+    background-image: url(flower.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#q6 {
+    background-image: url(pattern.jpg);
+    background-repeat: horizontal;
+    height: 100px;
+}
+#q7 {
+    background-image: url(stripe.png);
+    background-repeat: repeat-y;
+    height: 200px;
+}
+#q8 {
+    background-image: url(flower.jpg);
+    background-repeat: space;
+    height: 200px;
+}
+#q9 {
+    background-image: url(landscape.png);
+    background-attachment: fixed;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+#q10 {
+    background-image: url(landscape.png);
+    height: 300px;
+    background-attachment: local;
+    overflow: scroll;
+}
+#q11 {
+    background-image: url(flower.jpg);
+    background-attachment: local;
+    height: 200px;
+    overflow: scroll;
+}
+#q12 {
+    background-image: url(pattern.jpg);
+    background-color: #cccccc;
+    height: 150px;
+}
+#q13 {
+    background-image: linear-gradient(to right, red, yellow);
+    height: 100px;
+}
+#q14 {
+    background-image: url(flower.jpg), url(landscape.png);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    height: 200px;
+}
+#q15 {
+    background-image: radial-gradient(circle,blue, white);
+    height: 200px;
+}
+#q16 {
+    background-image: url(pattern.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#q17 {
+    background-image: url(stripe.png);
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#q18 {
+    background-image: url(flower.jpg);
+    background-position: 10px 20px;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#q19 {
+    background-image: url(landscape.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#q20 {
+    background-image: url(pattern.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
