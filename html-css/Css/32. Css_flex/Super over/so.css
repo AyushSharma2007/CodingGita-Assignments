@@ -1,0 +1,84 @@
+.bg {
+    background-image: url(Bg.png);
+    height: 530px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    color: white;
+    width: 70px;
+}
+.card {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ind {
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pak {
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: white;
+}
+.balls{
+    display: flex;
+    gap: 6px;
+}
+.cir {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opt {
+    display: flex;
+    gap: 50px;
+}
+.bat {
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    border-radius: 10px;
+    outline: 2px solid white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.re {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 10px;
+    outline: 2px solid white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}

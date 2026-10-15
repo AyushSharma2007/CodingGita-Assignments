@@ -1,0 +1,55 @@
+.main {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.first {
+    height: 240px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+.score {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 140px;
+    height: 240px;
+    border: 1px solid saddlebrown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.one {
+    height: 100px;
+    width: 100px;
+    background-image: url(3.png);
+    background-size: cover;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background-image: url(2.png);
+    background-size: cover;
+}
+.three {
+    height: 100px;
+    width: 100px;
+    background-image: url(1.png);
+    background-size: cover;
+}
+.four {
+    height: 100px;
+    width: 100px;
+    background-image: url(4.png);
+    background-size: cover;
+}
+h1 {
+    margin: 0%;
+}

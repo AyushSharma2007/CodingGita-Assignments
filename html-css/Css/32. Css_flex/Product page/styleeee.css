@@ -1,0 +1,33 @@
+.products {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content:space-evenly;
+  gap: 20px;
+}
+
+.product {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.product img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.product button {
+  margin-top: auto;
+}
+

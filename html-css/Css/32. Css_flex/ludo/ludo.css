@@ -1,0 +1,156 @@
+.ludo {
+    height: 651px;
+    width: 662px;
+    border: 0px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0;
+    align-content: flex-start;
+}
+.home1 {
+    height: 264px;
+    width: 265px;
+    border: 35px solid red;
+    margin: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-content: center;
+}
+.box {
+    height: 250px;
+    width: 132px;
+    border: 0px solid rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home2 {
+    height: 264px;
+    width: 265px;
+    border: 35px solid green;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-content: center;
+}
+.box2 {
+    height: 132px;
+    width: 265px;
+    border: 0px solid rebeccapurple;
+    align-self: flex-start;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.center {
+    width: 132px;
+    height: 132px;
+    border: 0px solid maroon;
+    display: flex;
+    gap: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+.home3 {
+    height: 264px;
+    width: 265px;
+    border: 35px solid blue;
+    margin: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-content: center;
+}
+.home4 {
+    height: 265px;
+    width: 264px;
+    border: 35px solid yellow;
+    margin: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-content: center;
+}
+.cir1 {
+    height: 50px;
+    width: 50px;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+.cir2 {
+    height: 50px;
+    width: 50px;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+.cir3 {
+    height: 50px;
+    width: 50px;
+    border: 3px solid blue;
+    border-radius: 50%;
+}
+.cir4 {
+    height: 50px;
+    width: 50px;
+    border: 3px solid yellow;
+    border-radius: 50%;
+}
+.red{
+    height: 132px;
+    width: 66px;
+    clip-path: polygon(0% 0%,0% 100%, 100% 50%);
+    background-color: red;
+    position: absolute;
+}
+.green{
+    height: 132px;
+    width: 132px;
+    clip-path: polygon(0% 0%,100% 0%, 50% 50%);
+    background-color: green;
+    position: absolute;
+}
+.blue{
+    height: 132px;
+    width: 132px;
+    clip-path: polygon(0% 100%, 50% 50%, 100% 100%);
+    background-color: blue;
+    position: absolute;
+}
+.yellow{
+    height: 132px;
+    width: 132px;
+    clip-path: polygon(100% 100%, 100% 0%, 50% 50%);
+    background-color: yellow;
+    position: absolute;
+}
+.sqr{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.cg {
+    background-color: green;
+}
+.cr {
+    background-color: red;
+}
+.cy {
+    background-color: yellow;
+}
+.cb {
+    background-color: blue;
+}

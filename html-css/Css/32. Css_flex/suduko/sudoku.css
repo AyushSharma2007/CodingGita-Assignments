@@ -1,0 +1,55 @@
+.title {
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont {
+    width: 1000px;
+    height: 400px;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sudoku {
+    width: 363px;
+    height: 368px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.b1 {
+    height: 119px;
+    width: 117px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(0, 0, 0);
+}
+.b1 div {
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.b2 {
+    height: 119px;
+    width: 117px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: mediumseagreen;
+}
+.b2 div {
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}

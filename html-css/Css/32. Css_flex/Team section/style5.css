@@ -1,0 +1,33 @@
+.team {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member {
+  flex: 0 0 280px;
+  min-width: 280px;
+  padding: 20px;
+  border: 1px solid #999;
+  background: #f5f5f5;
+  flex-grow: 1;
+}
+
+.member:nth-child(3) {
+  order: 0;
+}
+
+.member:nth-child(1) {
+  order: 1;
+}
+
+.member:nth-child(2) {
+  order: 1;
+}
+
+.member:nth-child(4) {
+  order: 4;
+}

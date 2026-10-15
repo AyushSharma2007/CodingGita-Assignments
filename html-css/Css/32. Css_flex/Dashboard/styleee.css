@@ -1,0 +1,33 @@
+.dashboard {
+  display: flex;
+  width: 1000px;/* Changing width to 700px shows us the effect of shrink property in main-content, the sidebar and activity panels retains their sizes only main content's width decreases */
+  height: 400px;
+  flex-direction: row;
+  gap: 15px;
+  align-items: stretch;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  width: 200px;
+  background: #ddd;
+}
+
+.main-content {
+  flex: 1 1 200px;
+  width: 200px;
+  background: #e8f0ff;
+  min-width: 0;
+  flex-grow: 3
+}
+
+.activity-panel {
+  flex: 0 0 250px;
+  width: 250px;
+  background: #eee;
+  align-self: flex-start;
+}
+
+.dashboard > * {
+  padding: 15px;
+}
