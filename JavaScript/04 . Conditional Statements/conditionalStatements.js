@@ -868,11 +868,14 @@ console.log(roleOutput);
 //   - Otherwise → 0% discount
 //   - Return both the discount percentage and the final payable amount in a single expression (you may return an object or a formatted string).
 
-let currentCartTotal = 3000;
-
-let finalReceipt = (currentCartTotal >= 5000) ? "Discount: 20%, Final Payable: ₹" + (currentCartTotal * 0.80) : 
-                   (currentCartTotal >= 2000) ? "Discount: 10%, Final Payable: ₹" + (currentCartTotal * 0.90) : 
-                   (currentCartTotal >= 1000) ? "Discount: 5%, Final Payable: ₹" + (currentCartTotal * 0.95) : 
-                   "Discount: 0%, Final Payable: ₹" + currentCartTotal;
-
-console.log(finalReceipt);
+let cartTotal = 5000;
+let discount = 0;
+final =
+  cartTotal >= 5000
+    ? ("discount % : 20 , final payable amount :", cartTotal -= cartTotal * 0.2)
+    : cartTotal >= 2000
+      ? ("discount % : 10 , final payable amount :", cartTotal -= cartTotal * 0.1)
+      : cartTotal >= 1000
+        ? ("discount % : 5 , final payable amount :", cartTotal -= cartTotal * 0.05)
+        : ("discount % : 0 , final payable amount :", cartTotal);
+console.log(final);
