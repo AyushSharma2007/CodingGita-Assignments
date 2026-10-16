@@ -670,11 +670,10 @@ switch (unknownValue) {
         break;
 }
 
-/*
-3. Create a tricky calculator using switch that supports these operations:
-4. +, -, *, /, %, and also ** (exponentiation).
-5. Handle division by zero properly inside the corresponding case.
-*/
+// 3. Create a tricky calculator using switch that supports these operations:
+// +, -, *, /, %, and also ** (exponentiation).
+// Handle division by zero properly inside the corresponding case.
+
 let mathOperator = "/";
 let number1 = 10;
 let number2 = 0;
@@ -704,13 +703,12 @@ switch (mathOperator) {
         break;
 }
 
-/*
-6. Write a program using switch that takes a date (day number of the month) and prints:
-7. “Beginning of the month” (1–10)
-8. “Middle of the month” (11–20)
-9. “End of the month” (21–31)
-10. Use switch (true) technique for range checking.
-*/
+// 9. Write a program using switch that takes a date (day number of the month) and prints:
+// “Beginning of the month” (1–10)
+// “Middle of the month” (11–20)
+// “End of the month” (21–31)
+// Use switch (true) technique for range checking.
+
 let dateNumber = 15;
 
 switch (true) {
@@ -727,12 +725,12 @@ switch (true) {
         console.log("Invalid date");
 }
 
-/*
-11. Create a multi-level nested switch program for an online food ordering system:
-12. First select Category: "veg" or "nonveg".
-13. Then select Item based on category.
-14. Finally select Size: "half" or "full" and print the final order summary with price.
-*/
+
+// 10. Create a multi-level nested switch program for an online food ordering system:
+// First select Category: "veg" or "nonveg".
+// Then select Item based on category.
+// Finally select Size: "half" or "full" and print the final order summary with price.
+
 let category = "veg";
 let foodItem = "paneer";
 let portionSize = "full";
@@ -743,10 +741,10 @@ switch (category) {
             case "paneer":
                 switch (portionSize) {
                     case "half":
-                        console.log("Order: Half Paneer, Price: ₹150");
+                        console.log("Order: Half Paneer, Price: 150");
                         break;
                     case "full":
-                        console.log("Order: Full Paneer, Price: ₹250");
+                        console.log("Order: Full Paneer, Price: 250");
                         break;
                 }
                 break;
@@ -757,10 +755,10 @@ switch (category) {
             case "chicken":
                 switch (portionSize) {
                     case "half":
-                        console.log("Order: Half Chicken, Price: ₹200");
+                        console.log("Order: Half Chicken, Price: 200");
                         break;
                     case "full":
-                        console.log("Order: Full Chicken, Price: ₹350");
+                        console.log("Order: Full Chicken, Price: 350");
                         break;
                 }
                 break;
@@ -769,119 +767,88 @@ switch (category) {
 }
 
 
-// ==========================================
 // F] Ternary Operator Questions
-// ==========================================
 
-/*
-1. Write a ternary operator to check whether a given number is divisible by 7. If yes, return "Divisible by 7", otherwise "Not Divisible by 7".
-*/
+// 1. Write a ternary operator to check whether a given number is divisible by 7. If yes, return "Divisible by 7", otherwise "Not Divisible by 7".
+    
 let divCheckNum = 14;
 
 let divisibleResult = (divCheckNum % 7 === 0) ? "Divisible by 7" : "Not Divisible by 7";
 console.log(divisibleResult);
 
-/*
-3. Using ternary operator, check if the temperature is greater than or equal to 30. Return "Hot Day" or "Pleasant Day".
-*/
+// 2. Using ternary operator, check if the temperature is greater than or equal to 30. Return "Hot Day" or "Pleasant Day".
+
 let weatherTemp = 35;
 
 let weatherResult = (weatherTemp >= 30) ? "Hot Day" : "Pleasant Day";
 console.log(weatherResult);
 
-/*
-4. Write a ternary expression that checks if a string is empty. Return "Empty String" if it is empty, otherwise "String has content".
-*/
+// 3. Write a ternary expression that checks if a string is empty. Return "Empty String" if it is empty, otherwise "String has content".
+
 let testString = "";
 
 let stringResult = (testString === "") ? "Empty String" : "String has content";
 console.log(stringResult);
 
-/*
-5. Using nested ternary, check a person’s age and return:
-  - "Child" (age < 13)
-  - "Teenager" (13–19)
-  - "Adult" (20 and above)
-*/
+// 4. Using nested ternary, check a person’s age and return:
+//   - "Child" (age < 13)
+//   - "Teenager" (13–19)
+//   - "Adult" (20 and above)
+
 let ageToGroup = 15;
 
-// Spacing it out so beginners can read it easily
-let lifeStage = (ageToGroup < 13) ? "Child" 
-              : (ageToGroup >= 13 && ageToGroup <= 19) ? "Teenager" 
-              : "Adult";
-              
+let lifeStage = (ageToGroup < 13) ? "Child" : (ageToGroup >= 13 && ageToGroup <= 19) ? "Teenager" : "Adult"; 
 console.log(lifeStage);
 
-/*
-6. Write a nested ternary to find the greater of three numbers (a, b, c) without using Math.max.
-*/
+// 5. Write a nested ternary to find the greater of three numbers (a, b, c) without using Math.max.
+
 let numA = 10;
 let numB = 25;
 let numC = 15;
 
-let largestNum = (numA > numB) ? 
-                    ((numA > numC) ? numA : numC) : 
-                    ((numB > numC) ? numB : numC);
-                    
+let largestNum = (numA > numB) ? ((numA > numC) ? numA : numC) : ((numB > numC) ? numB : numC);                 
 console.log("Largest number is: " + largestNum);
 
-/*
-7. Create a nested ternary that classifies a student’s marks as:
-  - "Distinction" (≥ 75)
-  - "First Class" (60–74)
-  - "Second Class" (50–59)
-  - "Pass" (35–49)
-  - "Fail" (< 35)
-*/
+// 6. Create a nested ternary that classifies a student’s marks as:
+//   - "Distinction" (≥ 75)
+//   - "First Class" (60–74)
+//   - "Second Class" (50–59)
+//   - "Pass" (35–49)
+//   - "Fail" (< 35)
+
 let resultMarks = 65;
 
-let finalGrade = (resultMarks >= 75) ? "Distinction" : 
-                 (resultMarks >= 60) ? "First Class" : 
-                 (resultMarks >= 50) ? "Second Class" : 
-                 (resultMarks >= 35) ? "Pass" : 
-                 "Fail";
-
+let finalGrade = (resultMarks >= 75) ? "Distinction" : (resultMarks >= 60) ? "First Class" : (resultMarks >= 50) ? "Second Class" : (resultMarks >= 35) ? "Pass" : "Fail";
 console.log(finalGrade);
 
-/*
-8. Write a single nested ternary expression that returns one of the following based on a number:
-9. "Positive Even", "Positive Odd", "Negative Even", "Negative Odd", or "Zero".
-*/
+// 7. Write a single nested ternary expression that returns one of the following based on a number:
+// "Positive Even", "Positive Odd", "Negative Even", "Negative Odd", or "Zero".
+
 let targetNumber = -4;
 
-let numberProperty = (targetNumber === 0) ? "Zero" : 
-                     (targetNumber > 0) ? 
-                        ((targetNumber % 2 === 0) ? "Positive Even" : "Positive Odd") : 
-                        ((targetNumber % 2 === 0) ? "Negative Even" : "Negative Odd");
-
+let numberProperty = (targetNumber === 0) ? "Zero" : (targetNumber > 0) ? ((targetNumber % 2 === 0) ? "Positive Even" : "Positive Odd") : ((targetNumber % 2 === 0) ? "Negative Even" : "Negative Odd");
 console.log(numberProperty);
 
-/*
-10. Using only nested ternary operators, implement the full leap year logic
-11. (divisible by 4 and (not divisible by 100 or divisible by 400)) and return "Leap Year" or "Not a Leap Year".
-*/
+// 8. Using only nested ternary operators, implement the full leap year logic
+// (divisible by 4 and (not divisible by 100 or divisible by 400)) and return "Leap Year" or "Not a Leap Year".
+
 let leapYearTest = 2024;
 
-let leapYearResult = (leapYearTest % 4 === 0) ? 
-                        ((leapYearTest % 100 !== 0) ? "Leap Year" : 
-                            ((leapYearTest % 400 === 0) ? "Leap Year" : "Not a Leap Year")) : 
-                        "Not a Leap Year";
-
+let leapYearResult = (leapYearTest % 4 === 0) ? ((leapYearTest % 100 !== 0) ? "Leap Year" : ((leapYearTest % 400 === 0) ? "Leap Year" : "Not a Leap Year")) : "Not a Leap Year";
 console.log(leapYearResult);
 
-/*
-12. Convert the following decision tree into one single nested ternary expression:
-13. if (role === "admin") {
-14.   if (action === "delete") → "Admin Delete"
-15.   else if (action === "edit") → "Admin Edit"
-16.   else → "Admin Other"
-17. } else if (role === "user") {
-18.   if (action === "view") → "User View"
-19.   else → "User Restricted"
-20. } else {
-21.   → "Invalid Role"
-22. }
-*/
+// 9. Convert the following decision tree into one single nested ternary expression:
+// if (role === "admin") {
+//   if (action === "delete") → "Admin Delete"
+//   else if (action === "edit") → "Admin Edit"
+//   else → "Admin Other"
+// } else if (role === "user") {
+//   if (action === "view") → "User View"
+//   else → "User Restricted"
+// } else {
+//   → "Invalid Role"
+// }
+
 let appRole = "admin";
 let appAction = "edit";
 
@@ -894,14 +861,13 @@ let roleOutput = (appRole === "admin") ?
 
 console.log(roleOutput);
 
-/*
-23. Write a complex nested ternary that calculates discount and final amount based on these rules:
-  - Cart total ≥ 5000 → 20% discount
-  - Cart total ≥ 2000 → 10% discount
-  - Cart total ≥ 1000 → 5% discount
-  - Otherwise → 0% discount
-  - Return both the discount percentage and the final payable amount in a single expression (you may return an object or a formatted string).
-*/
+// 10. Write a complex nested ternary that calculates discount and final amount based on these rules:
+//   - Cart total ≥ 5000 → 20% discount
+//   - Cart total ≥ 2000 → 10% discount
+//   - Cart total ≥ 1000 → 5% discount
+//   - Otherwise → 0% discount
+//   - Return both the discount percentage and the final payable amount in a single expression (you may return an object or a formatted string).
+
 let currentCartTotal = 3000;
 
 let finalReceipt = (currentCartTotal >= 5000) ? "Discount: 20%, Final Payable: ₹" + (currentCartTotal * 0.80) : 
