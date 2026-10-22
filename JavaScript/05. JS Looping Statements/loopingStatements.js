@@ -90,12 +90,14 @@ for (let i = 0; i < temps.length; i++) {
 console.log(hotDaysCount);
 
 // 2. Write a for loop that calculates the sum of all digits of a given number (example: 4729 -> 4+7+2+9 = 22).
-let num = 4729;
-let sumOfDigits = 0;
-for (let temp = num; temp > 0; temp = (temp - (temp % 10)) / 10) {
-  sumOfDigits += temp % 10;
+let numStr = String(num);
+let sum = 0;
+for (let i = 1; i <= numStr.length; i++) {
+  let last_digit = num % 10;
+  sum += last_digit;
+  num = Math.floor(num / 10);
 }
-console.log(sumOfDigits);
+console.log(sum);
 
 // 3. Create a for loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.
 for (let i = 1; i <= 100; i++) {
@@ -159,7 +161,7 @@ let b = 1;
 let bag = "0 1 ";
 for (let i = 1; i <= 18; i++) {
   let c = a + b;
-  basta += c + " ";
+  bag += c + " ";
   a = b;
   b = c;
 }
@@ -182,14 +184,12 @@ for (let i = 0; i < scores.length; i++) {
 console.log("Average:", average, "| Above average:", aboveAverageCount);
 
 // 10. Write a for loop that converts a decimal number to its binary representation.
-let decimal = 25;
+let num = 49;
 let binary = "";
-if (decimal === 0) {
-  binary = "0";
-} else {
-  for (let temp = decimal; temp > 0; temp = (temp - (temp % 2)) / 2) {
-    binary = (temp % 2) + binary;
-}
+for (; num != 0; ) {
+  let remainder = num % 2;
+  binary = remainder + binary;
+  num = Math.floor(num / 2);
 }
 console.log(binary);
 
