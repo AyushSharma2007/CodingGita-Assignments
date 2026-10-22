@@ -146,14 +146,14 @@ if (sumDivisors === testNum) {
   console.log(testNum + " is not a perfect number.");
 }
 
-// 7. & 8. Print the following series using a single for loop: 1 2 4 8 16 32 64 128
+// 7. Print the following series using a single for loop: 1 2 4 8 16 32 64 128
 let series = "";
 for (let i = 1; i <= 128; i *= 2) {
   series += i + (i === 128 ? "" : " ");
 }
 console.log(series);
 
-// 9. Write a for loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).
+// 8. Write a for loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).
 let a = 0, b = 1;
 console.log(a);
 console.log(b);
@@ -164,7 +164,7 @@ for (let i = 3; i <= 20; i++) {
   b = next;
 }
 
-// 10. Given an array of student scores [45, 78, 90, 32, 56, 88], use a for loop to calculate the average and also count how many students scored above the average.
+// 9. Given an array of student scores [45, 78, 90, 32, 56, 88], use a for loop to calculate the average and also count how many students scored above the average.
 let scores = [45, 78, 90, 32, 56, 88];
 let totalScore = 0;
 for (let i = 0; i < scores.length; i++) {
@@ -180,7 +180,7 @@ for (let i = 0; i < scores.length; i++) {
 }
 console.log("Average:", average, "| Above average:", aboveAverageCount);
 
-// 11. Write a for loop that converts a decimal number to its binary representation.
+// 10. Write a for loop that converts a decimal number to its binary representation.
 let decimal = 25;
 let binary = "";
 if (decimal === 0) {
