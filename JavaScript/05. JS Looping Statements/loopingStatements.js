@@ -90,10 +90,10 @@ hotDaysCount++;
 console.log(hotDaysCount);
 
 // 2. Write a for loop that calculates the sum of all digits of a given number (example: 4729 -> 4+7+2+9 = 22).
-let numStr = "4729";
+let num = 4729;
 let sumOfDigits = 0;
-for (let i = 0; i < numStr.length; i++) {
-sumOfDigits += parseInt(numStr[i]);
+for (let temp = num; temp > 0; temp = (temp - (temp % 10)) / 10) {
+sumOfDigits += temp % 10;
 }
 console.log(sumOfDigits);
 
@@ -109,7 +109,14 @@ let str = "JavaScript";
 let consonantsOnly = "";
 let vowels = "aeiouAEIOU";
 for (let i = 0; i < str.length; i++) {
-if (!vowels.includes(str[i])) {
+let isVowel = false;
+for (let j = 0; j < vowels.length; j++) {
+if (str[i] === vowels[j]) {
+isVowel = true;
+break;
+}
+}
+if (!isVowel) {
 consonantsOnly += str[i];
 }
 }
@@ -142,9 +149,9 @@ console.log(testNum + " is not a perfect number.");
 // 7. & 8. Print the following series using a single for loop: 1 2 4 8 16 32 64 128
 let series = "";
 for (let i = 1; i <= 128; i *= 2) {
-series += i + " ";
+series += i + (i === 128 ? "" : " ");
 }
-console.log(series.trim());
+console.log(series);
 
 // 9. Write a for loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).
 let a = 0, b = 1;
@@ -173,13 +180,13 @@ aboveAverageCount++;
 }
 console.log("Average:", average, "| Above average:", aboveAverageCount);
 
-// 11. Write a for loop that converts a decimal number to its binary representation (without using built-in methods like toString(2)).
+// 11. Write a for loop that converts a decimal number to its binary representation.
 let decimal = 25;
 let binary = "";
 if (decimal === 0) {
 binary = "0";
 } else {
-for (let temp = decimal; temp > 0; temp = Math.floor(temp / 2)) {
+for (let temp = decimal; temp > 0; temp = (temp - (temp % 2)) / 2) {
 binary = (temp % 2) + binary;
 }
 }
@@ -233,7 +240,14 @@ break;
 
 // 5. Create a for loop that prints numbers from 1 to 50. Stop completely (break) as soon as you encounter a number that is both a perfect square and greater than 20.
 for (let i = 1; i <= 50; i++) {
-if (i > 20 && Math.sqrt(i) % 1 === 0) {
+let isSquare = false;
+for (let j = 1; j * j <= i; j++) {
+if (j * j === i) {
+isSquare = true;
+break;
+}
+}
+if (i > 20 && isSquare) {
 break;
 }
 console.log(i);
