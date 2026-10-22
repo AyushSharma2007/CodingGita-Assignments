@@ -154,15 +154,16 @@ for (let i = 1; i <= 128; i *= 2) {
 console.log(series);
 
 // 8. Write a for loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).
-let a = 0, b = 1;
-console.log(a);
-console.log(b);
-for (let i = 3; i <= 20; i++) {
-  let next = a + b;
-  console.log(next);
+let a = 0;
+let b = 1;
+let bag = "0 1 ";
+for (let i = 1; i <= 18; i++) {
+  let c = a + b;
+  basta += c + " ";
   a = b;
-  b = next;
+  b = c;
 }
+console.log(bag);
 
 // 9. Given an array of student scores [45, 78, 90, 32, 56, 88], use a for loop to calculate the average and also count how many students scored above the average.
 let scores = [45, 78, 90, 32, 56, 88];
