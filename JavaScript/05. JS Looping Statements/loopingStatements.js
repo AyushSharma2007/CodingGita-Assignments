@@ -301,3 +301,135 @@ for (let i = 0; i < ageArr.length; i++) {
 }
 console.log(ageArr[i]);
 }
+
+// Part-d
+
+//1. Write a reverse for loop that prints all numbers from 50 down to 1 that are divisible by 3 but not divisible by 9.
+
+for (let i = 50; i>=0; i--){
+    if (i%3==0 && i%9!=0){
+        console.log(i)
+    }
+}
+
+//2. Write a reverse for loop that calculates the product of all odd digits of a given number (example: 4729 → 7 × 9 = 63).
+
+num = 4729;
+let productOfDigits = 1;
+for (let temp = num; temp > 0; temp = (temp - (temp % 10)) / 10) {
+  lastDigit = temp % 10;
+  if (lastDigit % 2 != 0) {
+    productOfDigits *= lastDigit;
+  }
+}
+console.log(productOfDigits);
+
+//3. Given the string "Programming", use a reverse for loop to create a new string that contains only the consonants in reverse order.
+
+let str = "Programming";
+let reversedConsonants = "";
+let vowels = "aeiouAEIOU";
+
+for (let i = str.length - 1; i >= 0; i--) {
+    if (!vowels.includes(str[i])) {
+        reversedConsonants += str[i];
+    }
+}
+
+console.log(reversedConsonants);
+
+//4. Write a reverse for loop that prints the first 15 Fibonacci numbers in reverse order (starting from the 15th number down to 0).
+
+let a = 0;
+let b = 1;
+let revbag = ""
+let bag = "0 1 ";
+for (let i = 1; i <= 18; i++) {
+  let c = a + b;
+  bag += c + " ";
+  a = b;
+  b = c;
+}
+for (temp = bag.length - 1; temp >= 0; temp--) {
+  revbag += bag[temp] + " ";
+}
+console.log(revbag)
+
+//5. Use a reverse for loop to check whether a given number is a palindrome by comparing digits from both ends (without converting the number to a string).
+
+num = 4729;
+let isNumPalindrome = false;
+let strnum = "";
+for (let temp = num; temp > 0; temp = (temp - (temp % 10)) / 10) {
+  lastDigit = temp % 10;
+  strnum += lastDigit;
+  if (num == strnum) {
+    isNumPalindrome = true;
+  }
+}
+console.log(`${num} is palindrome : ${isNumPalindrome}`);
+
+//6. Given an array [12, 45, 7, 23, 56, 89, 34], use a reverse for loop to find the largest number that is less than 50 (do not use any built-in methods).
+
+let array = [12, 45, 7, 23, 56, 89, 34];
+let preNum = 0;
+for (let temp = array.length - 1; temp >= 0; temp--) {
+  if (array[temp] > preNum && array[temp] < 50) {
+    preNum = array[temp];
+  }
+}
+console.log(`Largest Number from ${array} is ${preNum}`);
+
+//7. Given an array of temperatures [32, 28, 41, 19, 35, 27, 38], use a reverse for loop to count how many days were colder than 30°C, starting from the last day.
+
+let array = [32, 28, 41, 19, 35, 27, 38];
+let ctr = 0;
+for (temp = array.length - 1; temp >= 0; temp--) {
+  if (array[temp] < 30) {
+    ctr += 1;
+  }
+}
+console.log(`Days colder than 30 degree celcius : ${ctr}`);
+
+//8. Write a reverse for loop that converts a decimal number to its binary representation but prints the binary digits in reverse order (example: 13 → 1011 becomes 1101).
+
+let decimal = 13;
+let binary = "";
+if (decimal === 0) {
+  binary = "0";
+} else {
+  for (let temp = decimal; temp > 0; temp = (temp - (temp % 2)) / 2) {
+    binary += (temp % 2);
+  }
+}
+console.log(binary);
+
+//9. (Reverse For Loop + break)
+// Given an array [90, 85, 70, 95, 60, 88, 75], use a reverse for loop to find the first score (starting from the end) that is greater than 80. Print that score and its index, then stop the loop using break.
+
+let array = [90, 85, 70, 95, 60, 88, 75];
+let prevNum = 0;
+for (temp = array.length - 1; temp >= 0; temp--) {
+  if (array[temp] > 80) {
+    prevNum = array[temp];
+    break;
+  }
+}
+console.log(`Number just larger than 80 from ${array} is ${prevNum}`);
+
+//10. (Reverse For Loop + continue)
+// Write a reverse for loop that prints numbers from 40 down to 1, but skips every number that is a perfect square using continue.
+
+for (let temp = 40; temp > 0; temp--) {
+  let isSquare = false;
+  for (let i = 1; i * i <= temp; i++) {
+    if (i * i == temp) {
+      isSquare = true;
+      break;
+    }
+  }
+  if (isSquare) {
+    continue;
+  }
+  console.log(temp);
+}
