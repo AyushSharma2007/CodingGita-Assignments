@@ -469,6 +469,611 @@ print(days_needed)
 reverse_start = 20
 reverse_step = 5
 
+# Q41. Count the Digits
+n = int(input("Q41 number: "))
+count = 0
+if n == 0:
+    count = 1
+while n > 0:
+    count += 1
+    n = n // 10
+print(count)
+
+# Q42. Find the Sum of Digits
+n = int(input("Q42 number: "))
+total = 0
+while n > 0:
+    total += n % 10
+    n = n // 10
+print(total)
+
+# Q43. Reverse a Number
+n = int(input("Q43 number: "))
+rev = 0
+if n == 0:
+    print(0)
+else:
+    while n > 0:
+        rev = rev * 10 + n % 10
+        n = n // 10
+    print(rev)
+
+# Q44. Find the Product of Digits
+n = int(input("Q44 number: "))
+prod = 1
+if n == 0:
+    prod = 0
+while n > 0:
+    prod *= n % 10
+    n = n // 10
+print(prod)
+
+# Q45. Print Digits from Right to Left
+n = int(input("Q45 number: "))
+if n == 0:
+    print(0)
+while n > 0:
+    print(n % 10)
+    n = n // 10
+
+# Q46. Find the First and Last Digit
+n = int(input("Q46 number: "))
+last_digit = n % 10
+first_digit = n
+while first_digit >= 10:
+    first_digit = first_digit // 10
+print("First digit:", first_digit)
+print("Last digit:", last_digit)
+
+# Q47. Count Even Digits
+n = int(input("Q47 number: "))
+count = 0
+if n == 0:
+    count = 1
+while n > 0:
+    digit = n % 10
+    if digit % 2 == 0:
+        count += 1
+    n = n // 10
+print(count)
+
+# Q48. Count Odd Digits
+n = int(input("Q48 number: "))
+count = 0
+while n > 0:
+    digit = n % 10
+    if digit % 2 != 0:
+        count += 1
+    n = n // 10
+print(count)
+
+# Q49. Find the Sum of Even Digits
+n = int(input("Q49 number: "))
+total = 0
+while n > 0:
+    digit = n % 10
+    if digit % 2 == 0:
+        total += digit
+    n = n // 10
+print(total)
+
+# Q50. Find the Largest Digit
+n = int(input("Q50 number: "))
+max_digit = 0
+if n == 0:
+    max_digit = 0
+while n > 0:
+    digit = n % 10
+    if digit > max_digit:
+        max_digit = digit
+    n = n // 10
+print(max_digit)
+
+# Q51. Find the Smallest Digit
+n = int(input("Q51 number: "))
+min_digit = 9
+if n == 0:
+    min_digit = 0
+while n > 0:
+    digit = n % 10
+    if digit < min_digit:
+        min_digit = digit
+    n = n // 10
+print(min_digit)
+
+# Q52. Check Whether a Number Is a Palindrome
+n = int(input("Q52 number: "))
+orig = n
+rev = 0
+while n > 0:
+    rev = rev * 10 + n % 10
+    n = n // 10
+if orig == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# Q53. Count How Many Times a Digit Appears
+n = int(input("Q53 number: "))
+d = int(input("Q53 digit: "))
+count = 0
+if n == 0 and d == 0:
+    count = 1
+while n > 0:
+    if n % 10 == d:
+        count += 1
+    n = n // 10
+print(count)
+
+# Q54. Check Whether All Digits Are the Same
+n = int(input("Q54 number: "))
+last_digit = n % 10
+all_same = True
+while n > 0:
+    if n % 10 != last_digit:
+        all_same = False
+    n = n // 10
+if all_same:
+    print("Yes")
+else:
+    print("No")
+
+# Q55. Compare the Sum of First and Last Digits with the Middle Digits' Sum
+n = int(input("Q55 number: "))
+last_digit = n % 10
+n = n // 10
+middle_sum = 0
+while n >= 10:
+    middle_sum += n % 10
+    n = n // 10
+first_digit = n
+print("First and last digits sum:", first_digit + last_digit)
+print("Middle digits sum:", middle_sum)
+
+# Q56. Print Factorial Values from 1! to N!
+n = int(input("Q56 N: "))
+i = 1
+fact = 1
+while i <= n:
+    fact = fact * i
+    print(fact)
+    i += 1
+
+# Q57. Check Whether a Number Is a Factorial Value
+n = int(input("Q57 N: "))
+i = 1
+fact = 1
+while fact < n:
+    i += 1
+    fact = fact * i
+if fact == n:
+    print("Yes")
+else:
+    print("No")
+
+# Q58. Find the Largest Factorial Not Greater Than N
+n = int(input("Q58 N: "))
+i = 1
+fact = 1
+while fact * (i + 1) <= n:
+    i += 1
+    fact = fact * i
+print(fact)
+
+# Output Guessing Section (Q59 - Q78)
+
+# Q59 Output:
+# 1 1
+# 1 2
+# 1 3
+# 2 1
+# 2 2
+# 2 3
+
+# Q60 Output:
+# 1 2 
+# 1 2 
+
+# Q61 Output:
+# * 
+# * * 
+# * * * 
+
+# Q62 Output:
+# 1 2 3 
+# 2 3 
+# 3 
+
+# Q63 Output:
+# 1 2 End
+# 1 2 End
+# 1 2 End
+
+# Q64 Output:
+# 2
+# 3
+# 3
+# 4
+# Finished
+
+# Q65 Output:
+# A 1
+# A 2
+# B 1
+# B 2
+# B 3
+
+# Q66 Output:
+# 1 1
+# 1 2
+
+# Q67 Output:
+# 11
+# 33
+
+# Q68 Output:
+# X
+# 1 X
+# 1 2 X
+
+# Q69 Output:
+# 1 1
+# 1 2
+# 2 1
+# 2 2
+# 3 1
+# 3 2
+
+# Q70 Output:
+# 1 2 |
+# 1 2 |
+
+# Q71 Output:
+# 1 1
+# 1 2
+# 2 1
+# 2 2
+
+# Q72 Output:
+# 1 1
+# Next row
+# 2 1
+# Next row
+# 3 1
+# Next row
+
+# Q73 Output:
+# 1 1
+# 1 3
+# 1 4
+# 2 1
+# 2 3
+# 2 4
+
+# Q74 Output:
+# 2 4 5 6 
+
+# Q75 Output:
+# 1 3 Row
+# 1 3 Row
+# 1 3 Row
+
+# Q76 Output:
+# 1 2
+# 1 3
+# 2 1
+# 2 3
+# 3 1
+# 3 2
+
+# Q77 Output:
+# 1 1
+# 1 3
+# 2 1
+# 2 3
+
+# Q78 Output:
+# 1 3 4 End
+# 2 6 8 End
+# 3 9 End
+# Done
+
+# Statement-Based Programming Problems
+
+# Q79. Check Whether a Number Is Prime
+n = int(input("Q79 N: "))
+if n <= 1:
+    print("Not Prime")
+else:
+    is_prime = True
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            is_prime = False
+        i += 1
+    if is_prime:
+        print("Prime")
+    else:
+        print("Not Prime")
+
+# Q80. Find the HCF (GCD) of Two Numbers
+a = int(input("Q80 A: "))
+b = int(input("Q80 B: "))
+while b != 0:
+    temp = b
+    b = a % b
+    a = temp
+print(a)
+
+# Q81. Find the LCM of Two Numbers
+a = int(input("Q81 A: "))
+b = int(input("Q81 B: "))
+max_val = a
+if b > a:
+    max_val = b
+while True:
+    if max_val % a == 0 and max_val % b == 0:
+        print(max_val)
+        break
+    max_val += 1
+
+# Q82. Check Whether a Number Is Perfect
+n = int(input("Q82 N: "))
+if n <= 1:
+    print("Not Perfect")
+else:
+    total = 0
+    i = 1
+    while i < n:
+        if n % i == 0:
+            total += i
+        i += 1
+    if total == n:
+        print("Perfect")
+    else:
+        print("Not Perfect")
+
+# Q83. Check Whether a Number Is a Strong Number
+n = int(input("Q83 N: "))
+orig = n
+total_fact = 0
+while n > 0:
+    digit = n % 10
+    if digit == 0 or digit == 1: fact = 1
+    elif digit == 2: fact = 2
+    elif digit == 3: fact = 6
+    elif digit == 4: fact = 24
+    elif digit == 5: fact = 120
+    elif digit == 6: fact = 720
+    elif digit == 7: fact = 5040
+    elif digit == 8: fact = 40320
+    elif digit == 9: fact = 362880
+    total_fact += fact
+    n = n // 10
+if orig == total_fact:
+    print("Strong")
+else:
+    print("Not Strong")
+
+# Q84. Check Whether a Number Is an Armstrong Number
+n = int(input("Q84 N: "))
+orig = n
+count = 0
+temp = n
+while temp > 0:
+    count += 1
+    temp = temp // 10
+
+temp = n
+arm_sum = 0
+while temp > 0:
+    digit = temp % 10
+    arm_sum += digit ** count
+    temp = temp // 10
+
+if orig == arm_sum:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+
+# Q85. Convert a Decimal Number to Binary
+n = int(input("Q85 N: "))
+if n == 0:
+    print(0)
+else:
+    binary = 0
+    place = 1
+    while n > 0:
+        binary = binary + (n % 2) * place
+        place *= 10
+        n = n // 2
+    print(binary)
+
+# Q86. Find the Sum of a Number's Divisors
+n = int(input("Q86 N: "))
+i = 1
+total = 0
+while i <= n:
+    if n % i == 0:
+        total += i
+    i += 1
+print(total)
+
+# Q87. Print a Number Triangle
+n = int(input("Q87 N: "))
+i = 1
+while i <= n:
+    j = 1
+    while j <= i:
+        print(j, end=" ")
+        j += 1
+    print()
+    i += 1
+
+# Q88. Print a Hollow Rectangle
+r = int(input("Q88 R: "))
+c = int(input("Q88 C: "))
+i = 1
+while i <= r:
+    j = 1
+    while j <= c:
+        if i == 1 or i == r or j == 1 or j == c:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+        j += 1
+    print()
+    i += 1
+
+# Q89. Print a Right-Aligned Triangle
+n = int(input("Q89 N: "))
+i = 1
+while i <= n:
+    j = 1
+    while j <= n - i:
+        print(" ", end=" ")
+        j += 1
+    k = 1
+    while k <= i:
+        print("*", end=" ")
+        k += 1
+    print()
+    i += 1
+
+# Q90. Print a Multiplication Grid
+n = int(input("Q90 N: "))
+i = 1
+while i <= n:
+    j = 1
+    while j <= n:
+        print(i * j, end=" ")
+        j += 1
+    print()
+    i += 1
+
+# Q91. Print the Fibonacci Series up to a Limit
+n = int(input("Q91 N: "))
+a = 0
+b = 1
+while a <= n:
+    print(a, end=" ")
+    temp = a + b
+    a = b
+    b = temp
+print()
+
+# Q92. Print All Prime Numbers up to N
+n = int(input("Q92 N: "))
+num = 2
+while num <= n:
+    is_prime = True
+    i = 2
+    while i * i <= num:
+        if num % i == 0:
+            is_prime = False
+        i += 1
+    if is_prime:
+        print(num, end=" ")
+    num += 1
+print()
+
+# Q93. Print All Armstrong Numbers up to N
+n = int(input("Q93 N: "))
+num = 0
+while num <= n:
+    temp = num
+    count = 0
+    if temp == 0:
+        count = 1
+    while temp > 0:
+        count += 1
+        temp = temp // 10
+        
+    temp = num
+    arm_sum = 0
+    while temp > 0:
+        digit = temp % 10
+        arm_sum += digit ** count
+        temp = temp // 10
+        
+    if arm_sum == num:
+        print(num, end=" ")
+    num += 1
+print()
+
+# Q94. Print All Perfect Numbers up to N
+n = int(input("Q94 N: "))
+num = 1
+while num <= n:
+    total = 0
+    i = 1
+    while i < num:
+        if num % i == 0:
+            total += i
+        i += 1
+    if total == num:
+        print(num, end=" ")
+    num += 1
+print()
+
+# Q95. Find All Pairs Whose Sum Is N
+n = int(input("Q95 N: "))
+a = 1
+while a < n:
+    b = n - a
+    if a < b:
+        print(str(a) + " + " + str(b))
+    a += 1
+
+# Q96. Print All Two-Digit Numbers with a Given Digit Sum
+s = int(input("Q96 S: "))
+num = 10
+while num <= 99:
+    digit_sum = (num // 10) + (num % 10)
+    if digit_sum == s:
+        print(num, end=" ")
+    num += 1
+print()
+
+# Q97. Find All Common Divisors of Two Numbers
+a = int(input("Q97 A: "))
+b = int(input("Q97 B: "))
+i = 1
+while i <= a and i <= b:
+    if a % i == 0 and b % i == 0:
+        print(i, end=" ")
+    i += 1
+print()
+
+# Q98. Find Prime Factor Pairs
+n = int(input("Q98 N: "))
+a = 2
+found = False
+while a * a <= n:
+    if n % a == 0:
+        b = n // a
+        
+        is_prime_a = True
+        i = 2
+        while i * i <= a:
+            if a % i == 0:
+                is_prime_a = False
+            i += 1
+            
+        is_prime_b = True
+        j = 2
+        while j * j <= b:
+            if b % j == 0:
+                is_prime_b = False
+            j += 1
+            
+        if is_prime_a and is_prime_b:
+            print(str(a) + " * " + str(b))
+            found = True
+    a += 1
+
+if not found:
+    print("No prime factor pair")
 while reverse_start >= 0:
     print(reverse_start)
     reverse_start -= reverse_step
