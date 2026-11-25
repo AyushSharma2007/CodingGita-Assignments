@@ -1,0 +1,403 @@
+body{
+    height: 300vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+    background-color: #141414;
+    background-image: url(Title-Image.png) , linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3));
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav{
+    height: 10vh;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 3.5%;
+    background-image: linear-gradient(rgba(0,0,0,0.06),rgba(0, 0, 0, 0.06));
+}
+.lp{
+    display: flex;
+    height: inherit;
+    width: 35%;
+}
+.logo{
+    height: inherit;
+    background-image: url(NetflixLogoSvg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 0%;
+    width: 80%;
+}
+li{
+    font-size: 14px;
+}
+#start{
+    font-weight: bold;
+}
+.rp{
+    height: inherit;
+    width: 16%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 25% 15%;
+    align-items: center;
+}
+.rp div{
+    height: 70%;
+}
+.arr{
+    background-image: url(DownArrow.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gif{
+    background-image: url(GiftBox.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bel{
+    background-image: url(NotificationBell.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.acc{
+    background-image: url(ProfileIMG.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ser{
+    background-image: url(Search.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.empty{
+    height: 45vh;
+}
+.hero{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 3% 25% 1fr 3%;
+}
+.main{
+    display: grid;
+    grid-template-rows: 20% 1fr 25%;
+}
+.net{
+    display: flex;
+    align-content: center;
+}
+.sym{
+    width: 13%;
+    background-image: url(Netflix_Symbol_RGB\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: inherit;
+}
+.net p{
+    color: white;
+    letter-spacing: 25%;
+    font-weight: 300;
+}
+.maid p{
+    font-size: 115px;
+    margin: 0%;
+    color: white;
+    font-weight: 500;
+}
+.btns{
+    display: flex;
+}
+.btns div{
+    border-radius: 2px;
+    margin-left: 5%;
+    height: 55%;
+}
+.play{
+    width: 25%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.p{
+    background-image: url(Play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    margin-right: 7%;
+}
+.info{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.39);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.det{
+    background-image: url(Detail.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    margin-right: 2%;
+}
+.add{
+    height: inherit;
+    background-image: url(Add.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.see{
+    height: 38vh;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    width: 100%;
+}
+.txt{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 1%;
+    padding-left: 4%;
+    margin-top: 2%;
+}
+.ra{
+    height: 170%;
+    width: 1%;
+    background-image: url(ArrowRight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 3% 18% 18% 18% 18% 18%;
+    gap: 1.5%;
+    height: 67%;
+    margin-top: 1%;
+    margin-top: 2%;
+}
+.c{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.c1{
+    background-image: url(section\ 1.1.png);
+}
+.c2{
+    background-image: url(section\ 1.2.png);
+}
+.c3{
+    background-image: url(section\ 1.3.png);
+}
+.c4{
+    background-image: url(section\ 1.4.png);
+}
+.c5{
+    background-image: url(section\ 1.5.png);
+}
+.t10{
+    height: 42vh;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.rank{
+    display: grid;
+    grid-template-columns: 3% 17% 17% 17% 17% 17% 6%;
+    gap: 1%;
+    margin-top: 1%;
+    margin-top: 2%;
+}
+.r{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.o{
+    background-image: url(Rank\ -\ 01.png);
+    background-size: cover;
+    background-position: right;
+}
+.tw{
+    background-image: url(Rank\ -\ 02.png);
+    background-size: cover;
+    background-position: left;
+}
+.th{
+    background-image: url(Rank\ -\ 03.png);
+    background-size: cover;
+    background-position:left;
+}
+.fo{
+    background-image: url(Rank\ -\ 04.png);
+    background-size: cover;
+    background-position: center;
+}
+.fi{
+    background-image: url(Rank\ -\ 05.png);
+    background-size: cover;
+    background-position: left;
+}
+.s{
+    background-image: url(Rank\ -\ 06.png);
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 100%;
+}
+.p1{
+    background-image: url(section\ 2.1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p2{
+    background-image: url(section\ 2.2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p3{
+    background-image: url(section\ 2.3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p4{
+    background-image: url(section\ 2.4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p5{
+    background-image: url(section\ 2.5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.trend{
+    height: 38vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.c6{
+    background-image: url(section\ 3.1.png);
+}
+.c7{
+    background-image: url(section\ 3.2.png);
+}
+.c8{
+    background-image: url(section\ 3.3.png);
+}
+.c9{
+    background-image: url(section\ 3.4.png);
+}
+.c10{
+    background-image: url(section\ 3.5.png);
+}
+.sci{
+    height: 38vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+footer{
+    height: 47vh;
+    display: grid;
+    grid-template-rows: 10% 15% 1fr 15% 10%;
+}
+.apps{
+    display: grid;
+    grid-template-columns: 4% 4% 4% 4%;
+    padding-left: 20%;
+    gap: 2%;
+}
+.fb{
+    background-image: url(facebook.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ig{
+    background-image: url(instagram.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.x{
+    background-image: url(twitter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.yt{
+    background-image: url(youtube.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pages{
+    padding: 0% 20%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 100%;
+}
+.pages div{
+    height: 100%;
+}
+.pages ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+    color: gray;
+}
+.kodu{
+    height: 100%;
+    width: 10%;
+    margin-left: 20%;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 14px;
+}
+.cr{
+    height: 100%;
+    width: 25%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 10px;
+}
+.c11{
+    background-image: url(section\ 4.1.png);
+}
+.c12{
+    background-image: url(section\ 4.2.png);
+}
+.c13{
+    background-image: url(section\ 4.3.png);
+}
+.c14{
+    background-image: url(section\ 4.4.png);
+}
+.c15{
+    background-image: url(section\ 4.5.png);
+}
