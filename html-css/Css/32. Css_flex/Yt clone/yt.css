@@ -1,0 +1,443 @@
+* {
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+body{
+    display: flex;
+}
+aside {
+    height: 690px;
+    width: 270px;
+    background-color: rgb(43, 43, 43);
+    padding-top: 10px;
+}
+.sup{
+    height: 35px;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    gap: 20px;
+}
+.hem{
+    background-image: url(hambarger.png);
+    height: 20px;
+    background-size: cover;
+    width: 20px;
+}
+.logo{
+    background-image: url(Youtube\ logo.png);
+    background-size: cover;
+    height: 22px;
+    width: 100px;
+}
+.hero{
+    border-bottom: 1px solid gray;
+    height: 130px;
+    padding-top: 20px;
+    width: 250px;
+}
+.sec{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 25px;
+}
+.home{
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 230px;
+}
+.sec p{
+    font-weight: lighter;
+    font-size: 13px;
+}
+.icon{
+    background-size: cover;
+    height: 19px;
+    width: 19px;
+}
+.hm{
+    background-image: url(home.png);
+}
+.exp{
+    background-image: url(explore.png);
+}
+.shr{
+    background-image: url(shorts.png);
+}
+.sub{
+    background-image: url(subscription.png);
+}
+.ext{
+    border-bottom: 1px solid gray;
+    height: 190px;
+    padding-top: 20px;
+    width: 250px;
+}
+.lib{
+    background-image: url(library.png);
+}
+.his{
+    background-image: url(history.png);
+}
+.vid{
+    background-image: url(your_video.png);
+}
+.wl{
+    background-image: url(watch_later.png);
+}
+.lv{
+    background-image: url(liked.png);
+}
+.sm{
+    background-image: url(down_arrow.png);
+}
+.head{
+    color: gray;
+    font-size: small;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.chn{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 25px;
+    margin: 20px 0px;
+}
+.chn p{
+    font-size: 13px;
+}
+.img{
+    height: 19px;
+    width: 19px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.notg{
+    background-image: url(Ellipse\ 1.png);
+}
+.csb{
+    background-image: url(Ellipse\ 1\ \(1\).png);
+}
+.mkbhd{
+    background-image: url(Ellipse\ 1\ \(2\).png);
+}
+.fig{
+    background-image: url(Ellipse\ 1\ \(3\).png);
+}
+.atc{
+    background-image: url(Ellipse\ 1\ \(4\).png);
+}
+.alux{
+    background-image: url(Ellipse\ 1\ \(5\).png);
+}
+.dot{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: rgb(53, 148, 211);
+}
+#fig{
+    margin-right: 94px;
+}
+#notg{
+    margin-right: 30px;
+}
+#csb{
+    margin-right: 14px;
+}
+#alux{
+    margin-right: 80px;
+}
+.body{
+    background-color: rgb(26, 25, 25);
+}
+nav{
+    width: 1000px;
+    height: 95px;
+    border-bottom: 1px solid gray;
+}
+.upper{
+    height: 50px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+.upper p{
+    color: grey;
+}
+.ser{
+    height: 35px;
+    width: 420px;
+    border: 1px solid rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    justify-content: space-between;
+    margin-left: 170px;
+}
+.ser-icn{
+    background-image: url(search.png);
+    width: 60px;
+    background-color: rgb(73, 73, 73);
+    height: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mic{
+    height: 35px;
+    width: 50px;
+    background-image: url(mic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.create{
+    height: 35px;
+    width: 35px;
+    background-image: url(create.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 100px;
+}
+.more{
+    height: 35px;
+    width: 35px;
+    background-image: url(more.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+}
+.bell{
+    height: 35px;
+    width: 35px;
+    background-image: url(bell.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+}
+.pro{
+    height: 35px;
+    width: 35px;
+    background-image: url(Ellipse\ 4-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+}
+.options{
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.lower div{
+    font-size: small;
+}
+.all{
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    border-radius: 35px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.opt{
+    height: 30px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.cook{
+    width: 90px;
+}
+.ux{
+    width: 40px;
+}
+.case{
+    width: 90px;
+}
+.music{
+    width: 60px;
+}
+.lofi{
+    width: 90px;
+}
+.tour{
+    width: 50px;
+}
+.san{
+    width: 90px;
+}
+.tech{
+    width: 50px;
+}
+.i13{
+    width: 80px;
+}
+.uid{
+    width: 145px;
+}
+.comp{
+    width: 80px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    padding-top: 15px;
+}
+.card{
+    height: 233px;
+    width: 230px;
+}
+.cardh{
+    width: 230px;
+    height: 100px;
+}
+.v10{
+    background-image: url(Thumbnail-1.png);
+}
+.v11{
+    background-image: url(Thumbnail-2.png);
+}
+.v12{
+    background-image: url(Thumbnail-3.png);
+}
+.v9{
+    background-image: url(Thumbnail.png);
+}
+.v1{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-8.png);
+}
+.btm{
+    display: flex;
+}
+.eli{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-top: 20px;
+}
+.c1{
+    background-image: url(Ellipse\ 4\ \(1\).png);
+}
+.txt{
+    width: 190px;
+}
+.cap{
+    font-size: 11px;
+    margin-top: 21px;
+    margin-left: 6px;
+}
+.name{
+    color: gray;
+    font-size: 10px;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+.ver{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-image: url(verified.png);
+    background-size: cover;
+    margin-top: 7px;
+}
+.n{
+    display: flex;
+    gap: 4px;
+}
+.stat{
+    color: gray;
+    font-size: 10px;
+    margin-left: 6px;
+}
+.v2{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-9.png);
+}
+.c2{
+    background-image: url(Ellipse\ 4\ \(2\).png);
+}
+.v3{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-10.png);
+}
+.c3{
+    background-image: url(Ellipse\ 4\ \(3\).png);
+}
+.v4{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-11.png);
+    display: flex;
+    align-items: last baseline;
+}
+.c3{
+    background-image: url(Ellipse\ 4\ \(3\).png);
+}
+.live{
+    height: 20px;
+    width: inherit;
+    background-color: rgba(245, 193, 148, 0.788);
+    display: flex;
+    justify-content: center;
+}
+.liv{
+    background-image: url(live.png);
+}
+.v5{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-4.png);
+}
+.c5{
+    background-image: url(Ellipse\ 4\ \(4\).png);
+}
+.v6{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-5.png);
+    display: flex;
+    align-items: last baseline;
+}
+.c6{
+    background-image: url(Ellipse\ 4\ \(4\).png);
+}
+.live2{
+    height: 20px;
+    width: inherit;
+    background-color: rgba(27, 0, 25, 0.651);
+    display: flex;
+    justify-content: center;
+}
+.v7{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-6.png);
+}
+.c7{
+    background-image: url(Ellipse\ 4\ \(5\).png);
+}
+.v8{
+    width: inherit;
+    height: 136px;
+    background-image: url(Thumbnail-7.png);
+}
+.c8{
+    background-image: url(Ellipse\ 4\ \(6\).png);
+}
