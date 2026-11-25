@@ -1,0 +1,297 @@
+body{
+    height: 110vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    color: white;
+    font-size: small;
+}
+.cont{
+    display: grid;
+    grid-template-areas: "side main"
+    "btm btm";
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 86% 1fr;
+    height: 100%;
+    width: 100%;
+}
+aside{
+    grid-area: side;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 11% 24% 24% 33% 8%;
+}
+.logo{
+    background-image: url(Spotify\ logo.png);
+    background-size: 50%;
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+.menu{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 30% 30% 30% 10%;
+}
+.menu div{
+    padding-left: 30%;
+}
+.home{
+    background-image: url(Home.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 20px;
+    background-color: #222222;
+    margin: 3px;
+    border-radius: 5px;
+}
+.search{
+    background-image: url(Search.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 20px;
+}
+.your{
+    background-image: url(Your\ library.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 20px;
+}
+.play{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+}
+.play div{
+    padding-left: 30%;
+}
+.create{
+    background-image: url(Create.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: 20px;
+}
+.like{
+    background-image: url(Liked.png);
+    background-repeat: no-repeat;
+    background-size: 13%;
+    background-position: 20px;
+}
+.epi{
+    background-image: url(your\ episodes.png);
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position: 20px;
+}
+ul{
+    list-style-type: none;
+    padding: 0 20px;
+    column-height: 13px;
+}
+.app{
+    background-image: url(grommet-icons_install-option.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 20px;
+    padding-left: 60px;
+}
+.main{
+    grid-area: main;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #222222 0%, #121212 100%);
+    display: grid;
+    grid-template-rows: 10% 10% 30% 10% 40%;
+}
+.nav{
+    display: flex;
+    gap: 70%;
+}
+.lr{
+    height: 100%;
+    width: 15%;
+    background-image: url(top\ arrow\ navigation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+.user{
+    background-image: url(User.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 15%;
+    height: 100%;
+}
+.greet{
+    padding-left: 5%;
+}
+.tile{
+    padding: 0.5% 4%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+.tile>div{
+    background-color: rgb(58, 58, 58);
+    margin: 4px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.son{
+    background-image: url(Liked.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.neff{
+    background-image: url(image4.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.k{
+    background-image: url(image3.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.song{
+    background-image: url(image1.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.dance{
+    background-image: url(image2.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.name{
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name p{
+    color: gray;
+}
+.dance{
+    padding-left: 50px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    padding-left: 5%;
+}
+.cards>div{
+    margin: 8% 5%;
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    font-size: medium;
+}
+.low{
+    font-size: smaller;
+    color: gray;
+    padding: 0;
+    margin: -10px 4% 10px;
+}
+.week{
+    background-image: url(image9.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    padding-left: 5%;
+    padding-top: 80%;
+}
+.self{
+    background-image: url(image8.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    padding-left: 5%;
+    padding-top: 80%;
+}
+.word{
+    background-image: url(image7.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    padding-left: 5%;
+    padding-top: 80%;
+}
+.alexa{
+    background-image: url(image6.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    padding-left: 5%;
+    padding-top: 80%;
+}
+.story{
+    background-image: url(image5.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    padding-left: 5%;
+    padding-top: 80%;
+}
+.daily{
+    background-image: url(image10.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    padding-left: 5%;
+    padding-top: 80%;
+}
+.btm{
+    grid-area: btm;
+    height: 100%;
+    background-color: rgb(29, 29, 29);
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+.gray{
+    display: grid;
+    grid-template-columns: 15% 40% 20%;
+    justify-content: space-between;
+}
+.det{
+    background-image: url(image11.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 5px;
+    gap: 90px;
+    align-items: center;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+.low1{
+    color: gray;
+    margin: -10%;
+}
+.det>div{
+    margin-bottom: 10%;
+}
+.det p{
+    margin-left: 95%;
+    width: 100%;
+}
+.con{
+    background-image: url(Music\ Player\ Options.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ext{
+    background-image: url(Right\ options.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.green{
+    background-color: rgb(48, 212, 48);
+}
+.green p{
+    margin: 0%;
+    color: black;
+    margin-left: 75%;
+}
