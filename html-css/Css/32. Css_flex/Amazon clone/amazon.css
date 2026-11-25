@@ -1,0 +1,432 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-rows: 8% 7% 85%;
+}
+.nav{
+    background-color: #121921;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.logo{
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 100%;
+    width: 10%;
+}
+.find{
+    display: flex;
+    width: 11.5%;
+    margin: 0;
+    padding: 0;
+}
+.find .location{
+    background-image: url(location.png);
+    background-size: contain;
+    width: 10%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+.address p{
+    margin: 0;
+    padding: 0;
+}
+.hello{
+    color: gray;
+    font-size: small;
+}
+.sb{
+    width: 45%;
+    height: 80%;
+    background-color: white;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+.all{
+    border-right: 1.5px solid rgb(214, 211, 211);
+    height: 75%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.btm{
+    color: gray;
+    font-size: 10px;
+}
+.search{
+    background-color: #FBBE67;
+    height: 75%;
+    border-radius: 2px;
+    background-image: url(search\ icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ind{
+    width: 5%;
+    height: 75%;
+    display: flex;
+}
+.flag{
+    background-image: url(indian\ flag.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
+}
+.da{
+    background-image: url(down\ arrow.png);
+    height: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sign{
+    width: 9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sign .da{
+    width: 10%;
+}
+.txt{
+    margin: 0%;
+    width: 90%;
+}
+.sign p{
+    margin: 0%;
+}
+.HSI{
+    font-size: 13px;
+}
+.ret p{
+    margin: 0%;
+}
+.ret{
+    width: 5%;
+}
+.cart{
+    width: 6%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.ci{
+    background-image: url(cart\ icon.png);
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.links{
+    background-color: #243040;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.hem{
+    background-image: url(ham\ burger\ icon.png);
+    height: 100%;
+    width: 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.opt{
+    display: flex;
+    width: 73%;
+    height: 100%;
+    align-items: center;
+    font-size: 13px;
+    gap: 14px;
+}
+.prime{
+    display: flex;
+    height: 100%;
+    width: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+.prime .da{
+    height: 100%;
+    width: 20%;
+}
+.lion{
+    height: 100%;
+    width: 9%;
+    background-image: url(lion.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.pd{
+    height: 100%;
+    width: 12%;
+}
+h3{
+    margin: 0%;
+    padding: 0%;
+}
+.down{
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+.smi{
+    background-image: url(amazon\ design.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+    /* margin-left: 10px; */
+}
+.down p{
+    align-self: flex-start;
+    width: 50%;
+    height: 100%;
+    margin: 0%;
+    font-size: 13px;
+}
+.ra{
+    background-image: url(top\ bar\ right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 1%;
+}
+.main{
+    background-image: url(background\ picture.png);
+    background-size: cover;
+}
+.uh{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    height: 45%;
+}
+.left{
+    background-image: url(left\ arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right{
+    background-image: url(right\ arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lh{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    height: 55%;
+    justify-content: space-evenly;
+}
+.c1{
+    background-color: white;
+    padding: 10px;
+}
+.cards{
+    display: grid;
+    grid-template-areas: "i1 i2"
+    "i3 i4";
+    height: 75%;
+    margin-top: 6px;
+}
+.cards>div{
+    height: 95%;
+    width: 95%;
+    justify-content: space-around;
+}
+.i1{
+    grid-area: i1;
+}
+.i2{
+    grid-area: i2;
+}
+.i3{
+    grid-area: i3;
+}
+.i4{
+    grid-area: i4;
+}
+.img1{
+    background-image: url(image\ 17.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i1 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.img2{
+    background-image: url(image\ 18.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i2 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.img3{
+    background-image: url(image\ 20.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i3 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.img4{
+    background-image: url(image\ 19.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i4 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.c1>p{
+    margin-top: 10px;
+    color: teal;
+    font-size: small;
+}
+.c2{
+    background-color: white;
+    padding: 10px;
+}
+.i1{
+    grid-area: i1;
+}
+.i2{
+    grid-area: i2;
+}
+.i3{
+    grid-area: i3;
+}
+.i4{
+    grid-area: i4;
+}
+.img5{
+    background-image: url(image\ 25.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i5 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.img6{
+    background-image: url(image\ 24.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i6 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.img7{
+    background-image: url(image\ 22.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i7 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.img8{
+    background-image: url(image\ 21.png);
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+.i8 p{
+    height: 15%;
+    font-size: 10px;
+    margin: 0%;
+    color: gray;
+}
+.c2>p{
+    margin-top: 7px;
+    color: teal;
+    font-size: small;
+}
+.cards1{
+    display: grid;
+    grid-template-areas: "i1 i2"
+    "i3 i4";
+    height: 85%;
+    margin-top: 6px;
+}
+.cards1>div{
+    height: 95%;
+    width: 95%;
+    justify-content: space-around;
+}
+.c3{
+    background-color: white;
+    padding: 10px;
+}
+.photo{
+    height: 85%;
+    background-image: url(image\ 26.png);
+    background-size: cover;
+    margin-top: 3px;
+}
+.c3>p{
+    margin-top: 9px;
+    color: teal;
+    font-size: small;
+}
+.c4{
+    display: grid;
+    grid-template-rows: 37% 1fr 55%;
+}
+.sec{
+    background-color: white;
+    padding: 10px;
+}
+.sec h2, .sec h3{
+    margin: 0%;
+}
+button{
+    border: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-top: 8px;
+}
+.lap{
+    background-image: url(image\ 28.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
