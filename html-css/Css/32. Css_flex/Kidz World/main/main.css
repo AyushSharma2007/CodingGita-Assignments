@@ -96,7 +96,7 @@ header {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #fff;
+  /* background-color: #b82424; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,4 +181,50 @@ header {
   font-size: 80px;
   padding-left: 80px;
   /* padding-top:50px; */
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 125px;
+    height: 25px;
+  }
+  .product-card {
+    border: 2px solid black;
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .product-grid {
+    border: 2px solid rgb(122, 28, 28);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .img-container {
+    border: 2px solid rgb(73, 41, 177);
+    min-width: 100px;
+    min-height: 120px;
+  }
+  .container {
+    padding: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .product-card {
+    flex: 0 0 31%;
+    max-width: 31%;
+  }
+  .large-grid .product-card {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+@media (max-width: 480px) {
+  .product-card,
+  .large-grid .product-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
